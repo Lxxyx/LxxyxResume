@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #E0E0E0; }
+
+header {
+  background-color: #3F51B5;
+  color: #fff;
+  padding: 30px 45px; }
+  @media (max-width: 400px) {
+    header {
+      padding: 30px 10px; } }
+  header .title {
+    margin: 0;
+    font-size: 72px;
+    text-align: center; }
+    header .title span {
+      display: block;
+      font-size: 20px; }
+    @media (max-width: 400px) {
+      header .title {
+        font-size: 50px; }
+        header .title span {
+          font-size: 16px; } }
+
+.container {
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px; }
+  @media (min-width: 1024px) {
+    .container {
+      width: 980px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 750px; } }
+  @media (max-width: 400px) {
+    .container {
+      padding-bottom: 10px;
+      margin-top: 0px;
+      box-shadow: 0px 0px 0px; } }
+
+main {
+  background-color: #fff; }
+
+input {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 4px 0; }
+
+form {
+  margin-bottom: 10px; }
+
+fieldset {
+  margin-bottom: 10px; }
+
+#primaryInfo {
+  padding-top: 5px; }
+
+#education button {
+  width: 100%;
+  background: #3F51B5; }
+
+button {
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 30px; }
+  @media (min-width: 1024px) {
+    button {
+      height: 40px; } }
+
+#experience button {
+  width: 100%; }
+
+#experience .add-task {
+  background: #3F51B5; }
+
+#experience .add-project {
+  background: teal;
+  border-radius: 0px; }
+
+.add-cert {
+  width: 100%;
+  background: teal;
+  border-radius: 0px; }
+
+#commit {
+  width: 100%;
+  background-color: #4CAF50;
+  border-radius: 0px;
+  margin-top: 20px;
+  height: 60px; }
+
+footer {
+  margin: 15px 6px; }
+  footer a {
+    text-decoration: none;
+    color: teal;
+    font-weight: 700; }
+  footer p {
+    text-align: center; }

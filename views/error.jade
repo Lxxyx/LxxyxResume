@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= '该简历不存在，请检查输入的网址是否正确。'
+  h3= message
+  h4= error.status
+  pre #{error.stack}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>生成简历</title>
+  <link rel="stylesheet" type="text/css" href="public/resume/dist/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="public/css/g.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">简历生成
+      <span>Powered by Lxxyx</span>
+    </h1>
+    </header>
+    <main>
+      <form id="primaryInfo">
+        <fieldset>
+          <legend>基础信息（必填）</legend>
+          <input placeholder="姓名" v-model="resume.header.title.name"></input>
+          <input placeholder="求职岗位" v-model="resume.header.title.job"></input>
+          <input placeholder="邮箱地址" v-model="resume.header.contacts.mail"></input>
+          <input placeholder="微信账号" v-model="resume.header.contacts.wechat"></input>
+        </fieldset>
+      </form>
+      <form id="education">
+        <fieldset>
+          <legend>教育经历（必填）</legend>
+          <input placeholder="大学名称"></input>
+          <input placeholder="所学专业"></input>
+          <input placeholder="持续时间（如2014-2018）"></input>
+          <input placeholder="所得荣誉（不够再加）"></input>
+        </fieldset>
+        <button @click.prevent="addHonor()">增加荣誉栏</button>
+      </form>
+      <form id="language">
+        <fieldset>
+          <legend>语言水平（必填）</legend>
+          <input placeholder="考试名称（如CET-4）"></input>
+          <input placeholder="考试分数"></input>
+          <input placeholder="该考试满分分数（如四级，710分满分）"></input>
+        </fieldset>
+        <button class="add-cert" id="addCert" @click.prevent="addCert()">增加一门证书</button>
+      </form>
+      <form id="experience">
+        <fieldset>
+          <legend>工作/项目经历（没有可不填）</legend>
+          <input placeholder="项目名称/工作地点"></input>
+          <input placeholder="所从事的工作"></input>
+          <input placeholder="持续时间（如2014.7-2015.1）"></input>
+          <input placeholder="主要任务"></input>
+          <button class="add-task" @click.prevent="addTask()">增加一栏主要任务</button>
+        </fieldset>
+        <button class="add-project" id="addProject" @click.prevent="addProject()">增加一份经历</button>
+      </form>
+      <!--   <form id="skills">
+        <fieldset>
+          <legend>技能（没有可不填）</legend>
+          <input placeholder="技能名称"></input>
+          <input placeholder="所从事的工作"></input>
+          <input placeholder="持续时间（如2014.7-2015.1）"></input>
+          <input placeholder="主要任务"></input>
+          <button class="add-task">增加一栏主要任务</button>
+        </fieldset>
+        <button class="add-project">增加一个工作/项目</button>
+      </form> -->
+      <form id="contacts">
+        <fieldset>
+          <legend>额外信息（没有则不填）</legend>
+          <input placeholder="微博账号"></input>
+          <input placeholder="Github地址"></input>
+          <input placeholder="博客地址"></input>
+        </fieldset>
+      </form>
+      <button id="commit" @click="commit()">提交生成简历</button>
+    </main>
+  </div>
+  <footer>
+    <p>Design by <a href="https://joyeecheung.github.io/resume/">Joyee Cheung</a>. MIT License.</p>
+  </footer>
+  <script type="text/javascript" src="public/node_modules/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="public/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="public/js/g.js"></script>
+</body>
+
+</html>

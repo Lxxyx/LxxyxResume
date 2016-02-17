@@ -1,0 +1,15 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "to save public files",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lxxyx",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0"
+  }
+}
