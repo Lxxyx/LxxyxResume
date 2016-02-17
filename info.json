@@ -1,0 +1,181 @@
+{
+  "username": "Lxxyx",
+  "title": "刘子健 - 个人简历",
+  "aside": [{
+    "href": "https://github.com/Lxxyx/LxxyxResume",
+    "content": "源代码"
+  }, {
+    "href": "/public/resume/LxxyxResume.pdf",
+    "content": "PDF下载"
+  }, {
+    "href": "https://segmentfault.com/u/lxxyx",
+    "content": "SF"
+  }, {
+    "href": "https://www.zhihu.com/people/lxxyx",
+    "content": "知乎"
+  }],
+  "header": {
+    "title": {
+      "name": "刘子健",
+      "job": "前端开发实习生"
+    },
+    "contacts": {
+      "mail": "841380530@qq.com",
+      "wechat": "Greboxer",
+      "weibo": {
+        "href": "http://weibo.com/u/2239592792",
+        "name": "刘子健_且行且歌"
+      },
+      "github": {
+        "href": "https://github.com/Lxxyx",
+        "name": "Lxxyx"
+      },
+      "blog": {
+        "href": "http://www.lxxyx.win",
+        "name": "Lxxyx的前端乐园"
+      }
+    }
+  },
+  "education": {
+    "time": "2014-2018",
+    "name": "南昌大学",
+    "major": "人力资源管理（本科）",
+    "honor": [
+      "2015.3-2016.6 南昌大学家园工作室 — 前端开发",
+      "2015.7-2016.6 公共管理学院暑期科研项目 — 负责人",
+      "2015.9-2016.6 公共管理学院学生会技术中心 — 副部长"
+    ]
+  },
+  "language": {
+    "cert": [{
+      "name": "CET-4",
+      "grade": 495,
+      "fullmarks": 710
+    }, {
+      "name": "CET-6",
+      "grade": 450,
+      "fullmarks": 710
+    }],
+    "skills": [
+      "能较为流畅阅读开发文档及其他资料",
+      "可在英文字幕下观看 MOOC 课程、开发者大会视频",
+      "能够在英文邮件列表、Stack Overflow 等社区正常交流"
+    ]
+  },
+  "experience": [{
+    "title": {
+      "place": "家园工作室",
+      "time": "2015.3-至今"
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "工作室内网改造，负责前端开发。学习使用<strong>ES6+Vue+Vue-Router+Webpack</strong>完成<strong>SPA</strong>的编写",
+        "负责工作室的微信公众号开发"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "南昌大学公共管理学院",
+      "time": "2015.12-至今"
+    },
+    "content": {
+      "position": "全栈开发",
+      "tasks": [
+        "学院官网重构，<strong>全栈开发</strong>",
+        "重构前负责系统界面设计与技术选型",
+        "重构中负责前端与后台系统开发",
+        "重构后负责系统上线与维护"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "博客项目（个人）",
+      "time": "2015.10-2015.11"
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "负责博客页面的设计",
+        "负责博客页面的编写",
+        "负责博客页面前端部分的性能调优，学习了<strong>代码打包和与如何后台交互</strong>等知识"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "南昌大学人力资源管理官网建设（个人）",
+      "time": "2016.1-至今"
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "负责页面的设计与编写",
+        "负责前端及后台程序的部署与运行",
+        "教授后台一些基础知识，这个项目给他练手"
+      ]
+    }
+  }],
+  "skills": {
+    "flags": {
+      "name": "Web前端",
+      "skill": [{
+        "name": "<strong>HTML/CSS</strong>",
+        "description": [
+          "能够编写语义化的 <strong>HTML</strong>，模块化的 <strong>CSS</strong>，实现常用的布局与动画",
+          "了解<strong>HTML5/CSS3</strong>新特性，敢于尝试，能熟练使用部分新特性",
+          "不借助框架，能编写简单的<strong>自适应网页</strong>"
+        ]
+      }, {
+        "name": "<strong>ECMAScript（JavaScript）</strong>",
+        "description": [
+          "熟悉JavaScript，代码编写遵守规范",
+          "了解<strong>JavaScript面向对象知识</strong>与<strong>MVC</strong>，<strong>MVVM</strong><strong></strong>模式",
+          "对<strong>JavaScript的设计模式</strong>有初步学习和了解",
+          "了解和<strong>学习ES6规范</strong>，并在新项目中应用"
+        ]
+      }, {
+        "name": "前端工程化实践",
+        "description": [
+          "能熟练使用<strong>Vue</strong>，搭配<strong>Vue-Router</strong>完成SPA",
+          "熟悉<strong>jQuery/Bootstrap</strong>等常见框架类库的使用",
+          "对React和Angular等业界主流框架有所了解",
+          "熟练使用<strong>Gulp,Webpack</strong>等代码构建工具"
+        ]
+      }]
+    },
+    "cloud": {
+      "name": "Node.js",
+      "skill": [{
+        "name": "<strong>后端程序</strong>",
+        "description": [
+          "能够使用<strong>Node.js API/Express</strong>搭建简单的后端程序，与数据库交互和模板渲染",
+          "能编写简单的<strong>Express中间件</strong>"
+        ]
+      }, {
+        "name": "其它程序",
+        "description": [
+          "能够使用Node.js API编写简单的<strong>命令行程序</strong>",
+          "能使用Node类库编写<strong>爬虫</strong>，爬取所需数据"
+        ]
+      }]
+    },
+    "gears": {
+      "name": "其它",
+      "skill": [{
+        "name": "<strong>计算机基础</strong>",
+        "description": [
+          "计算机基础较好，对计算机与编程<strong>有极大热情，自学能力较强</strong>",
+          "在校选课与自学《计算机科学导论》，《计算机网络》等课程，对计算机科学有系统了解",
+          "自学<strong>数据结构与算法</strong>，用JavaScript实现并归纳总结--<a href=\"http://t.cn/R4Ybrs0\">总结地址</a>"
+        ]
+      }, {
+        "name": "工具使用",
+        "description": [
+          "使用<strong>Linux</strong>三个月，能熟练操作使用与简单配置服务端程序",
+          "熟练使用<strong>Git</strong>等团队协作工具",
+          "日常使用<strong>Sublime Text</strong>进行开发，会简单的使用Vim"
+        ]
+      }]
+    }
+  }
+}
