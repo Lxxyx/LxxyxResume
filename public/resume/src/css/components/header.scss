@@ -23,6 +23,7 @@ header {
   }
   @include media("print") {
     display: block;
+    margin-top: 5px;
   }
 }
 

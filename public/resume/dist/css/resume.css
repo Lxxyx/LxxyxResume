@@ -62,7 +62,8 @@ header {
       display: none; } }
   @media print {
     .qrcode {
-      display: block; } }
+      display: block;
+      margin-top: 5px; } }
 
 .title {
   float: right;
@@ -175,6 +176,7 @@ dd {
     padding-top: 28px; }
   .timeline-wrapper .timeline-title {
     background: #333;
+    border-radius: 5px;
     color: #fff;
     font-size: 17px;
     line-height: 1.33;
