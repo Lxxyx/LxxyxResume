@@ -45,6 +45,10 @@ dd {
   @include media("<=phone") {
     padding: 30px 10px;
   }
+
+  @include media("print") {
+    padding: 30px 20px!important;
+  }
 }
 
 .sec-title-wrapper {
@@ -178,14 +182,19 @@ dd {
     background: $white;
     text-decoration: none;
     margin-right: 10px;
-    padding: 0 2px;
+    padding: 0 3px;
     border-radius: 5px;
-    color:$black;
+    color: $black;
     float: right;
   }
 }
 
 .skills {
+  @include media("print") {
+    .skill-content {
+      margin: 0;
+    }
+  }
   .skill-name {
     font-size: 18px;
     font-weight: 700;

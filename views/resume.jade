@@ -9,9 +9,11 @@ block header
       h2= header.title.job
     address
       ul.contacts
+        li.icon-phone.phone
+          a= header.contacts.phone
         li.icon-mail
           a(href="mailto:"+header.contacts.mail)= header.contacts.mail
-        li.icon-wechat= header.contacts.wechat
+        li.icon-wechat.wechat= header.contacts.wechat
         li.icon-weibo
           a(href=header.contacts.weibo.href)= header.contacts.weibo.name
         if header.contacts.github
@@ -39,7 +41,7 @@ block education
             dt.education-name= education.name
             dd.education-major.icon-hat= education.major
             each val in education.honor
-              dd.education-honor.icon-trophy= val
+              dd.education-honor.icon-trophy!= val
 
 
 block language              

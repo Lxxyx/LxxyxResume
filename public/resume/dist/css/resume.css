@@ -92,6 +92,16 @@ header {
 address {
   overflow-y: hidden; }
 
+.phone {
+  display: none; }
+  @media print {
+    .phone {
+      display: block; } }
+
+@media print {
+  .wechat {
+    display: none; } }
+
 .contacts {
   float: left;
   padding-left: 16px;
@@ -146,6 +156,9 @@ dd {
   @media (max-width: 400px) {
     .content {
       padding: 30px 10px; } }
+  @media print {
+    .content {
+      padding: 30px 20px !important; } }
 
 .sec-title-wrapper {
   overflow-y: hidden; }
@@ -262,10 +275,14 @@ dd {
     background: #fff;
     text-decoration: none;
     margin-right: 10px;
-    padding: 0 2px;
+    padding: 0 3px;
     border-radius: 5px;
     color: #333;
     float: right; }
+
+@media print {
+  .skills .skill-content {
+    margin: 0; } }
 
 .skills .skill-name {
   font-size: 18px;

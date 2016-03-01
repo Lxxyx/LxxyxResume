@@ -22,7 +22,7 @@
 }
 
 @mixin icon-medium {
-  color:#fff;
+  color: #fff;
   background: teal;
   padding: 6px;
   border-radius: 50%;
@@ -159,5 +159,10 @@
 
 .icon-trophy:before {
   content: "\e60e";
+  @include iconfont;
+}
+
+.icon-phone:before {
+  content: "\e611";
   @include iconfont;
 }

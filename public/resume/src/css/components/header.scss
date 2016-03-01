@@ -59,6 +59,19 @@ address {
   overflow-y: hidden;
 }
 
+.phone {
+  display: none;
+  @include media("print") {
+    display: block;
+  }
+}
+
+.wechat {
+  @include media("print") {
+    display: none;
+  }
+}
+
 .contacts {
   float: left;
   padding-left: 16px;

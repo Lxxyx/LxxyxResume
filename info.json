@@ -20,6 +20,7 @@
       "job": "前端开发实习生"
     },
     "contacts": {
+      "phone": "15579185518",
       "mail": "Lxxyxzj@gmail.com",
       "wechat": "Greboxer",
       "weibo": {
@@ -42,9 +43,8 @@
     "major": "人力资源管理（本科）",
     "honor": [
       "2015.3-至今 南昌大学家园工作室 — 前端开发",
-      "2016.1 慕课网征文大赛获奖者（共五人）",
-      "2016.2 慕课网优秀作者（文章收藏量为当月前十）",
-      "2016.3 SegmentFault社区声望1k"
+      "2016.1 <strong>慕课网征文大赛获奖者</strong>",
+      "2016.2 <strong>慕课网优秀作者</strong>"
     ]
   },
   "language": {
@@ -81,7 +81,7 @@
       "position": "前端+后台开发",
       "tasks": [
         "负责工作室微信企业公众号开发",
-        "使用Express作为后台，Vue作为前端框架"
+        "使用<strong>Express</strong>作为后台，<strong>Vue</strong>作为前端框架"
       ]
     }
   }, {
@@ -96,7 +96,7 @@
       "position": "前端开发",
       "tasks": [
         "负责博客页面的设计与编写",
-        "使用AmazeUI框架，完成页面自适应",
+        "使用AmazeUI框架，实现页面自适应",
         "学习<strong>前端性能优化</strong>，如JS代码后置，代码压缩打包等"
       ]
     }
@@ -115,8 +115,8 @@
       "position": "全栈开发",
       "tasks": [
         "仿写张秋怡学姐的简历，尝试学习移动端网页设计",
-        "前端使用Gulp+Scss完成响应式设计",
-        "后台使用Express+MongoDB+Jade,完成简单的数据库交互与页面模板渲染"
+        "前端使用<strong>Gulp+Scss</strong>完成响应式设计",
+        "后台使用<strong>Express+MongoDB+Jade</strong>,完成简单的数据库交互与页面模板渲染"
       ]
     }
   }],
@@ -141,7 +141,7 @@
       }, {
         "name": "前端工程化实践",
         "description": [
-          "能熟练使用<strong>Vue</strong>，搭配<strong>Vue-Router</strong>完成SPA",
+          "能熟练使用<strong>Vue</strong>，搭配<strong>Vue-Router</strong>完成SPA的编写",
           "熟悉<strong>jQuery/Bootstrap</strong>等常见框架类库的使用",
           "对React和Angular等业界主流框架有所了解",
           "熟练使用<strong>Gulp,Webpack</strong>等代码构建工具"
@@ -176,9 +176,9 @@
       }, {
         "name": "工具使用",
         "description": [
-          "使用<strong>Linux</strong>三个月，能操作使用Liunx，完成简单的服务端程序配置",
+          "使用<strong>Linux</strong>三个月，在Linux环境下完成日常工作",
           "熟练使用<strong>Git</strong>等团队协作工具",
-          "日常使用<strong>Sublime Text</strong>进行开发，会简单的使用Vim"
+          "日常使用<strong>Sublime Text</strong>进行开发，能简单的操作Vim"
         ]
       }]
     }
