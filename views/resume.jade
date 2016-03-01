@@ -61,6 +61,7 @@ block language
       ul.language-skills
         each val in language.skills
           li.icon-star= val
+
 block experience   
   section.experience
     .sec-title-wrapper.icon-rocket
@@ -75,7 +76,11 @@ block experience
           li.timeline-item.icon-bag
             h3.timeline-title
               span.experience-place= val.title.place
-              time.experience-time= val.title.time
+              if val.title.time
+                time.experience-time= val.title.time
+              else
+                each link in val.title.links
+                  a.experience-link(href=link.href)= link.name
             dl.experience-content
               dt.experience-position= val.content.position
               each task in val.content.tasks

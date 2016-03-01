@@ -213,7 +213,7 @@ dd {
   overflow-y: hidden; }
 
 .language .progress {
-  width: 80%;
+  width: 78%;
   height: 25px;
   background: #333;
   float: left;
@@ -257,6 +257,15 @@ dd {
     float: right;
     margin-right: 10px;
     font-size: 15px; }
+  .experience .experience-link {
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 0 2px;
+    border-radius: 5px;
+    color: #333;
+    float: right; }
 
 .skills .skill-name {
   font-size: 18px;

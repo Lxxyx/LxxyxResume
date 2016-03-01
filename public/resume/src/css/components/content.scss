@@ -119,7 +119,7 @@ dd {
     overflow-y: hidden;
   }
   .progress {
-    width: 80%;
+    width: 78%;
     @include media("<=phone") {
       margin-left: 10px;
       width: 75%;
@@ -172,6 +172,16 @@ dd {
     float: right;
     margin-right: 10px;
     font-size: 15px;
+  }
+  .experience-link {
+    display: inline-block;
+    background: $white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 0 2px;
+    border-radius: 5px;
+    color:$black;
+    float: right;
   }
 }
 

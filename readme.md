@@ -1,7 +1,13 @@
 # Introduction
-A resume generator by express+jade+scss+mongodb.
-网页是对着Joyee Cheung的页面，用jade+scss仿写的。
-在生成页面的底部，有标注Joyee Cheung的版权信息。
+
+### 简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/)
+
+简历基于Express+MongoDB+Jade。前端使用Scss。访问地址：[Lxxyx的简历](http://115.159.148.159/)
+
+### 运行方式：
+下一步准备写一个页面，只需填入数据便可在服务器自动生成简历页面。
+
+进度：已完成60%。
 
 # License
 (MIT License)

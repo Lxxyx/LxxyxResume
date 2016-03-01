@@ -17,6 +17,7 @@ router.get('/', function(req, res, next) {
       db.close();
     })
   })
+
 });
 
 router.get('/r/:username', function(req, res, next) {
