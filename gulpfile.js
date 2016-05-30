@@ -3,21 +3,21 @@ var sass = require('gulp-sass')
 var autoprefixer = require('gulp-autoprefixer')
 var jade = require('gulp-jade')
 var copy = require('gulp-copy')
-var clean = require('gulp-clean')
+var rimrafPromise = require('rimraf-promise')
 var ghPages = require('gulp-gh-pages')
 
 gulp.task('resume-sass', function () {
-  return gulp.src('src/css/resume.scss')
+  gulp.src('src/css/resume.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css/'))
 })
 
 gulp.task('icon-sass', function () {
-  return gulp.src('src/css/iconfont.scss')
+  gulp.src('src/css/iconfont.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -52,8 +52,7 @@ gulp.task('copy', () => {
 })
 
 gulp.task('clean', () => {
-  gulp.src('./dist/')
-  .pipe(clean())
+  rimrafPromise('./dist/')
 })
 
 gulp.task('deploy', () => {
@@ -64,4 +63,4 @@ gulp.task('deploy', () => {
   }))
 })
 
-gulp.task('default', ['clean', 'icon-sass', 'resume-sass', 'json2jade', 'copy'])
+gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])

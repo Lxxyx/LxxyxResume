@@ -6,7 +6,9 @@
 访问地址：[Lxxyx的简历](http://115.159.148.159/)
 
 ### 运行方式：
-替换info.json，运行gulp即可。
+替换info.json的内容，运行`gulp`即可。  
+生成内容可在dist文件夹查看。
+
 需要自动部署的，运行`gulp deploy`即可，需要在gulpfile中更改为你的地址（！会抹去你github pages内容，慎用！）
 ### 
 

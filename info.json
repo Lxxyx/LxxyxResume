@@ -17,7 +17,7 @@
   "header": {
     "title": {
       "name": "刘子健",
-      "job": "前端开发实习生"
+      "job": "前端开发实习生（已找到）"
     },
     "contacts": {
       "phone": "15579185518",
@@ -73,6 +73,26 @@
     }
   }, {
     "title": {
+      "place": "Koa2-Easy（个人项目）",
+      "links": [{
+        "name": "demo",
+        "href": "http://koa.ncuhr.win"
+      }, {
+        "name": "源代码",
+        "href": "https://github.com/Lxxyx/koa2-easy"
+      }]
+    },
+    "content": {
+      "position": "Node.js开发",
+      "tasks": [
+        "从自身需求出发，基于<strong>Koa2</strong>开发",
+        "默认支持<strong>COR跨域，Gzip</strong>，开箱即用",
+        "支持一键开启Github hook,<strong>实现自动更新部署</strong>",
+        "使用<strong>纯ES6/7</strong>"
+      ]
+    }
+  }, {
+    "title": {
       "place": "博客系统（个人项目）",
       "links": [{
         "name": "源代码",
@@ -122,12 +142,12 @@
         "description": [
           "熟悉JavaScript，代码编写遵守规范",
           "了解<strong>JavaScript面向对象知识</strong>与<strong>MVC</strong>，<strong>MVVM</strong><strong></strong>模式",
-          "<strong>学习ES6/7规范</strong>，不断实践并在新项目中应用"
+          "<strong>学习ES6/7规范</strong>，不断实践并在新项目中应用，对ES6新特性较为熟悉"
         ]
       }, {
         "name": "前端工程化实践",
         "description": [
-          "能熟练使用<strong>Vue</strong>，搭配<strong>Vue-Router</strong>完成SPA的编写",
+          "能熟练使用<strong>Vue</strong>，搭配<strong>Vuex与Vue-Router</strong>完成SPA的编写",
           "熟悉<strong>jQuery/Bootstrap</strong>等常见框架类库的使用",
           "对React和Angular等业界主流框架有所了解",
           "熟练使用<strong>Gulp,Webpack</strong>等代码构建工具"
@@ -139,14 +159,16 @@
       "skill": [{
         "name": "<strong>后端程序</strong>",
         "description": [
-          "能够使用<strong>Node.js API/Express</strong>搭建简单的后端程序，完成数据库交互和模板渲染",
-          "简单的完成<strong>Nginx</strong>的配置，实现反向代理"
+          "能够使用<strong>Node.js API/Koa</strong>搭建后端服务器",
+          "简单的完成<strong>Nginx</strong>的配置，实现反向代理",
+          "能够使用Node.js编写<strong>命令行程序</strong>",
+          "能使用Node类库编写<strong>爬虫</strong>，爬取所需数据"
         ]
       }, {
         "name": "其它程序",
         "description": [
-          "能够使用Node.js编写<strong>命令行程序</strong>",
-          "能使用Node类库编写<strong>爬虫</strong>，爬取所需数据"
+          "了解Python，熟悉前后端交互方式",
+          "了解MongoDB,能开发简单的CRUD应用"
         ]
       }]
     },
