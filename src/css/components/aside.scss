@@ -1,0 +1,45 @@
+aside {
+  @include media("print") {
+    display: none!important;
+  }
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  li {
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px 0 0 5px;
+    transition: 0.2s linear;
+    a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      width: 100%;
+    }
+    &:hover {
+      background-color: rgba(55, 55, 55, 0.8);
+    }
+  }
+  @include media("<tablet") {
+    position: relative;
+    display: table;
+    width: 100%;
+    right: auto;
+    top: 0;
+    transform: none;
+    ul {
+      display: table-row;
+    }
+    li {
+      display: table-cell;
+      text-align: center;
+      border-radius: 0px!important;
+    }
+    a {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

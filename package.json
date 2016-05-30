@@ -1,0 +1,22 @@
+{
+  "name": "Rusume generator",
+  "version": "1.0.0",
+  "description": "Resume generator by Gulp + Sass",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lxxyx",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-clean": "^0.3.2"
+  }
+}

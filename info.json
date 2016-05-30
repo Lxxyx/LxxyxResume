@@ -1,0 +1,172 @@
+{
+  "username": "Lxxyx",
+  "title": "刘子健 - 个人简历",
+  "aside": [{
+    "href": "https://github.com/Lxxyx/LxxyxResume",
+    "content": "源代码"
+  }, {
+    "href": "./pdf/LxxyxResume.pdf",
+    "content": "PDF下载"
+  }, {
+    "href": "https://segmentfault.com/u/lxxyx",
+    "content": "SF"
+  }, {
+    "href": "https://www.zhihu.com/people/lxxyx",
+    "content": "知乎"
+  }],
+  "header": {
+    "title": {
+      "name": "刘子健",
+      "job": "前端开发实习生"
+    },
+    "contacts": {
+      "phone": "15579185518",
+      "mail": "Lxxyxzj@gmail.com",
+      "wechat": "Greboxer",
+      "weibo": {
+        "href": "http://weibo.com/u/2239592792",
+        "name": "刘子健_且行且歌"
+      },
+      "github": {
+        "href": "https://github.com/Lxxyx",
+        "name": "Lxxyx"
+      },
+      "blog": {
+        "href": "http://www.lxxyx.win",
+        "name": "Lxxyx的前端乐园"
+      }
+    }
+  },
+  "education": {
+    "time": "2014-2018",
+    "name": "南昌大学",
+    "major": "人力资源管理（本科）",
+    "honor": [
+      "2015.3-至今 南昌大学家园工作室 — 前端开发",
+      "2016.1 <strong>慕课网征文大赛获奖者</strong>",
+      "2016.2 <strong>慕课网优秀作者</strong>"
+    ]
+  },
+  "language": {
+    "cert": [{
+      "name": "CET-4",
+      "grade": 495,
+      "fullmarks": 710
+    }],
+    "skills": [
+      "能较为流畅的阅读开发文档及其他资料",
+      "可在英文字幕下观看 MOOC 课程、开发者大会视频",
+      "能正常使用Google与Stack Overflow解决开发问题"
+    ]
+  },
+  "experience": [{
+    "title": {
+      "place": "家园工作室",
+      "time": "2015.11-至今"
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "工作室内部办公网重构。使用Vue+ES6+Webpack,<strong>实现组件化开发</strong>",
+        "使用Vue+Vuex+Vue-Router,完成<strong>SPA</strong>的编写"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "博客系统（个人项目）",
+      "links": [{
+        "name": "源代码",
+        "href": "https://github.com/guyskk/kkblog"
+      }]
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "负责博客页面的设计与编写",
+        "使用AmazeUI框架，实现页面自适应",
+        "学习<strong>前端性能优化</strong>，如JS代码后置，代码压缩打包等"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "个人简历",
+      "links": [{
+        "name": "Demo",
+        "href": "http://115.159.148.159"
+      }, {
+        "name": "源代码",
+        "href": "https://github.com/Lxxyx/LxxyxResume"
+      }]
+    },
+    "content": {
+      "position": "全栈开发",
+      "tasks": [
+        "仿写张秋怡学姐的简历，尝试学习移动端网页设计",
+        "前端使用<strong>Gulp+Scss</strong>完成响应式设计",
+        "后台使用<strong>Express+MongoDB+Jade</strong>,完成简单的数据库交互与页面模板渲染"
+      ]
+    }
+  }],
+  "skills": {
+    "flags": {
+      "name": "Web前端",
+      "skill": [{
+        "name": "<strong>HTML/CSS</strong>",
+        "description": [
+          "能够编写语义化的 <strong>HTML</strong>，熟悉<strong>CSS</strong>的使用，实现常用的布局与动画",
+          "了解<strong>HTML5/CSS3</strong>新特性，敢于尝试，能熟练使用部分新特性",
+          "不借助框架，能编写<strong>响应式/移动端网页</strong>"
+        ]
+      }, {
+        "name": "<strong>ECMAScript（JavaScript）</strong>",
+        "description": [
+          "熟悉JavaScript，代码编写遵守规范",
+          "了解<strong>JavaScript面向对象知识</strong>与<strong>MVC</strong>，<strong>MVVM</strong><strong></strong>模式",
+          "<strong>学习ES6/7规范</strong>，不断实践并在新项目中应用"
+        ]
+      }, {
+        "name": "前端工程化实践",
+        "description": [
+          "能熟练使用<strong>Vue</strong>，搭配<strong>Vue-Router</strong>完成SPA的编写",
+          "熟悉<strong>jQuery/Bootstrap</strong>等常见框架类库的使用",
+          "对React和Angular等业界主流框架有所了解",
+          "熟练使用<strong>Gulp,Webpack</strong>等代码构建工具"
+        ]
+      }]
+    },
+    "cloud": {
+      "name": "Node.js",
+      "skill": [{
+        "name": "<strong>后端程序</strong>",
+        "description": [
+          "能够使用<strong>Node.js API/Express</strong>搭建简单的后端程序，完成数据库交互和模板渲染",
+          "简单的完成<strong>Nginx</strong>的配置，实现反向代理"
+        ]
+      }, {
+        "name": "其它程序",
+        "description": [
+          "能够使用Node.js编写<strong>命令行程序</strong>",
+          "能使用Node类库编写<strong>爬虫</strong>，爬取所需数据"
+        ]
+      }]
+    },
+    "gears": {
+      "name": "其它",
+      "skill": [{
+        "name": "<strong>计算机基础</strong>",
+        "description": [
+          "计算机基础较好，对计算机与编程<strong>有极大热情，自学能力较强</strong>",
+          "在校选课与MOOC自学《计算机科学导论》，《计算机网络》，《操作系统》等课程",
+          "自学<strong>数据结构与算法</strong>，用JavaScript实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>"
+        ]
+      }, {
+        "name": "工具使用",
+        "description": [
+          "使用<strong>Linux</strong>六个月，在Linux环境下完成日常工作",
+          "熟练使用<strong>Git</strong>等团队协作工具",
+          "日常使用<strong>Sublime Text</strong>进行开发，能简单的操作Vim"
+        ]
+      }]
+    }
+  }
+}

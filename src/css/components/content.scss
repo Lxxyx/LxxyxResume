@@ -1,0 +1,207 @@
+$black: #333;
+$white: #fff;
+@mixin content-after {
+  content: '';
+  border: 8px solid $black;
+  border-radius: 100%;
+  width: 0px;
+  height: 0px;
+  float: left;
+  margin-left: 15px;
+  margin-top: -23px;
+}
+
+section {
+  margin-bottom: 14px;
+}
+
+dd {
+  line-height: 1.42;
+}
+
+.column-6 {
+  @include media(">=desktop") {
+    width: 50%;
+    float: left;
+  }
+  @include media("<desktop") {
+    width: 100%;
+    padding-left: 0!important;
+  }
+  @include media("print") {
+    width: 50%;
+    float: left;
+  }
+}
+
+.column {
+  padding-left: 15px;
+}
+
+.content {
+  background: $white;
+  padding: 30px 45px;
+  overflow: hidden;
+  @include media("<=phone") {
+    padding: 30px 10px;
+  }
+
+  @include media("print") {
+    padding: 30px 20px!important;
+  }
+}
+
+.sec-title-wrapper {
+  overflow-y: hidden;
+  .sec-title {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 10px;
+  }
+  .sec-zh {
+    font-size: 20px;
+    float: left;
+    font-weight: 700;
+  }
+  .sec-en {
+    font-size: 16px;
+    font-variant: small-caps;
+    float: left;
+    clear: left;
+    color: teal;
+    font-weight: 700;
+  }
+}
+
+.sec-content {
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
+
+.timeline-wrapper {
+  margin-top: -28px;
+  ul {
+    border-left: 5px solid $black;
+    padding-top: 28px;
+  }
+  .timeline-title {
+    background: $black;
+    border-radius: 5px;
+    color: $white;
+    font-size: 17px;
+    line-height: 1.33;
+    font-weight: 400;
+    padding: 2px 0px 2px 22px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  &::after {
+    @include content-after;
+  }
+}
+
+.education {
+  .education-content {
+    margin: 0;
+  }
+  .education-name {
+    font-size: 32px;
+    margin: 6px 0 5px 26px;
+  }
+  dd {
+    margin-left: 27px;
+  }
+}
+
+.language {
+  .language-cert-type {
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+  .language-cert-wrapper {
+    overflow-y: hidden;
+  }
+  .progress {
+    width: 78%;
+    @include media("<=phone") {
+      margin-left: 10px;
+      width: 75%;
+    }
+    @include media("print") {
+      width: 75%;
+      margin-left: 10px;
+    }
+    height:25px;
+    background:$black;
+    float: left;
+    margin-top: 1.8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    margin-left: 26px;
+    .progress-bar {
+      background: teal;
+      height: 100%;
+      border-radius: 4px;
+      .progress-label {
+        float: right;
+        color: $white;
+        font-size: 19px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .language-skills {
+    li {
+      line-height: 1.4;
+    }
+  }
+}
+
+.experience {
+  overflow-y: hidden;
+  .experience-content {
+    margin: 0;
+  }
+  .experience-position {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 6px 0 5px 26px;
+  }
+  .experience-task {
+    margin-left: 27px;
+    font-size: 15px;
+  }
+  .experience-time {
+    float: right;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .experience-link {
+    display: inline-block;
+    background: $white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 0 3px;
+    border-radius: 5px;
+    color: $black;
+    float: right;
+  }
+}
+
+.skills {
+  @include media("print") {
+    .skill-content {
+      margin: 0;
+    }
+  }
+  .skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 6px 0 5px 26px;
+  }
+  .skill-description {
+    margin-left: 23px;
+    font-size: 15px;
+  }
+}
