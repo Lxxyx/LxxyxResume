@@ -122,8 +122,8 @@
       "position": "全栈开发",
       "tasks": [
         "仿写张秋怡学姐的简历，尝试学习移动端网页设计",
-        "前端使用`Gulp+Scss`完成响应式设计",
-        "后台`Gulp+Jade`完成网页生成与一键部署至Github Pages"
+        "前端使用 `Gulp+Scss` 完成响应式设计",
+        "后台使用 `Gulp+Jade` 完成网页生成与一键部署至 Github Pages"
       ]
     }
   }],
