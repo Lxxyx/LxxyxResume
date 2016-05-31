@@ -33,7 +33,7 @@ gulp.task('sass:watch', function () {
 })
 
 gulp.task('json2jade', function () {
-  var locals = require('./info.json')
+  var locals = highlight(require('./info.json'))
   gulp.src('./src/jade/index.jade')
     .pipe(jade({
       locals: locals
@@ -43,6 +43,19 @@ gulp.task('json2jade', function () {
 
 function src2dist(dir) {
   return gulp.src(`./src/${dir}/*.*`).pipe(gulp.dest(`./dist/${dir}/`))
+}
+
+function highlight(locals) {
+  var locals = JSON.stringify(locals)
+  var re = new RegExp('`.*?`', 'i')
+
+  while(re.test(locals)) {
+    var find = re.exec(locals)[0]
+    var bold = find.replace('`', '<strong>').replace('`', '</strong>')
+    locals = locals.replace(find, bold)
+  }
+
+  return JSON.parse(locals)
 }
 
 gulp.task('copy', () => {

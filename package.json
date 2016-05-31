@@ -12,6 +12,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-copy": "^0.0.2",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "jade": "^1.11.0",

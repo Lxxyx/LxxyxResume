@@ -82,7 +82,7 @@ block experience
                 time.experience-time= val.title.time
               else
                 each link in val.title.links
-                  a.experience-link(href=link.href)= link.name
+                  a.experience-link(href=link.href target="_blank")= link.name
             dl.experience-content
               dt.experience-position= val.content.position
               each task in val.content.tasks
