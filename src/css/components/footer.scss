@@ -1,12 +1,12 @@
 footer {
-  @include media("print") {
+  margin: 15px 6px;
+  @include media('print') {
     display: none;
   }
-  margin: 15px 6px;
   a {
+    font-weight: 700;
     text-decoration: none;
     color: teal;
-    font-weight: 700;
   }
   p {
     text-align: center;

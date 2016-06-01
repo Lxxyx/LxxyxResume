@@ -1,33 +1,17 @@
 aside {
-  @include media("print") {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  @include media('print') {
     display: none!important;
   }
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  li {
-    margin-top: 6px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px 0 0 5px;
-    transition: 0.2s linear;
-    a {
-      display: inline-block;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      width: 100%;
-    }
-    &:hover {
-      background-color: rgba(55, 55, 55, 0.8);
-    }
-  }
-  @include media("<tablet") {
+  @include media('<tablet') {
     position: relative;
+    top: 0;
+    right: auto;
     display: table;
     width: 100%;
-    right: auto;
-    top: 0;
     transform: none;
     ul {
       display: table-row;
@@ -35,11 +19,27 @@ aside {
     li {
       display: table-cell;
       text-align: center;
-      border-radius: 0px!important;
+      border-radius: 0!important;
     }
     a {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  li {
+    margin-top: 6px;
+    transition: .2s linear;
+    border-radius: 5px 0 0 5px;
+    background-color: rgba(0, 0, 0, .8);
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+    &:hover {
+      background-color: rgba(55, 55, 55, .8);
     }
   }
 }

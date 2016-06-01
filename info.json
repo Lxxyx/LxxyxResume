@@ -1,5 +1,9 @@
 {
-  "username": "Lxxyx",
+  "Author": "Lxxyx - Inspired by Joyee Cheung",
+  "Guide": [
+    "照着这里面的格式填写即可",
+    "PDF使用chrome浏览器的保存为PDF即可"
+  ],
   "title": "刘子健 - 个人简历",
   "aside": [{
     "href": "https://github.com/Lxxyx/LxxyxResume",
@@ -75,7 +79,7 @@
     "title": {
       "place": "Koa2-Easy",
       "links": [{
-        "name": "demo",
+        "name": "Demo",
         "href": "http://koa.ncuhr.win"
       }, {
         "name": "源代码",
@@ -83,12 +87,11 @@
       }]
     },
     "content": {
-      "position": "Node.js开发",
+      "position": "Node.js",
       "tasks": [
         "从自身需求出发，基于`Koa2`开发",
         "使用`ES6/7`开发，使用`Async/Await`避免回调地狱",
-        "默认支持`COR跨域，Gzip`，开箱即用",
-        "支持一键开启Github hook,`实现自动更新部署`"
+        "默认支持`COR跨域，Gzip`，开箱即用"
       ]
     }
   }, {
@@ -119,7 +122,7 @@
       }]
     },
     "content": {
-      "position": "全栈开发",
+      "position": "前端&Node.js",
       "tasks": [
         "仿写张秋怡学姐的简历，尝试学习移动端网页设计",
         "前端使用 `Gulp+Scss` 完成响应式设计",
@@ -140,14 +143,14 @@
       }, {
         "name": "`ECMAScript（JavaScript）`",
         "description": [
-          "熟悉JavaScript，代码编写遵守规范",
+          "熟悉JavaScript，`代码编写遵守规范`",
           "了解`JavaScript面向对象知识`与`MVC`，`MVVM`等模式",
-          "`学习ES6/7规范`，不断实践并在新项目中应用，对ES6新特性较为熟悉"
+          "学习ES6/7规范，不断实践并在新项目中应用，`对ES6新特性较为熟悉`"
         ]
       }, {
         "name": "前端工程化实践",
         "description": [
-          "能熟练使用`Vue,Vuex与Vue-Router`完成SPA的编写",
+          "能熟练使用`Vue`并搭配Vuex与Vue-Router完成单页应用的编写",
           "熟悉`jQuery/Bootstrap`等常见框架类库的使用",
           "对React和Angular等业界主流框架有所了解",
           "熟练使用`Gulp,Webpack`等代码构建工具"
@@ -155,12 +158,12 @@
       }]
     },
     "cloud": {
-      "name": "Web后台",
+      "name": "Web后端",
       "skill": [{
         "name": "`Node.js`",
         "description": [
-          "能够使用`Node.js API/Koa`搭建后端服务器",
-          "能够使用Node.js编写`命令行程序`",
+          "能够使用`Express/Koa2`等流行框架搭建后端服务器",
+          "能够`使用Node.js开发命令行程序`",
           "熟练使用`Node类库编写爬虫`，爬取所需数据",
           "能配合MongoDB开发简单的CRUD应用"
         ]
@@ -185,7 +188,7 @@
       }, {
         "name": "工具使用",
         "description": [
-          "使用`Linux六个月，在Linux环境下完成日常工作`",
+          "使用Linux六个月，`在Linux环境下完成日常工作`",
           "熟练使用Git等团队协作工具",
           "日常使用`Sublime Text`进行开发，能简单的操作Vim"
         ]

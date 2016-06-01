@@ -1,14 +1,14 @@
 $black: #333;
 $white: #fff;
 @mixin content-after {
+  float: left;
+  width: 0;
+  height: 0;
+  margin-top: -23px;
+  margin-left: 15px;
   content: '';
   border: 8px solid $black;
   border-radius: 100%;
-  width: 0px;
-  height: 0px;
-  float: left;
-  margin-left: 15px;
-  margin-top: -23px;
 }
 
 section {
@@ -20,17 +20,17 @@ dd {
 }
 
 .column-6 {
-  @include media(">=desktop") {
-    width: 50%;
+  @include media('>=desktop') {
     float: left;
+    width: 50%;
   }
-  @include media("<desktop") {
+  @include media('<desktop') {
     width: 100%;
     padding-left: 0!important;
   }
-  @include media("print") {
-    width: 50%;
+  @include media('print') {
     float: left;
+    width: 50%;
   }
 }
 
@@ -39,14 +39,13 @@ dd {
 }
 
 .content {
-  background: $white;
-  padding: 30px 45px;
   overflow: hidden;
-  @include media("<=phone") {
+  padding: 30px 45px;
+  background: $white;
+  @include media('<=phone') {
     padding: 30px 10px;
   }
-
-  @include media("print") {
+  @include media('print') {
     padding: 30px 20px!important;
   }
 }
@@ -55,45 +54,45 @@ dd {
   overflow-y: hidden;
   .sec-title {
     float: left;
-    padding: 0;
     margin: 0 0 0 10px;
+    padding: 0;
   }
   .sec-zh {
     font-size: 20px;
-    float: left;
     font-weight: 700;
+    float: left;
   }
   .sec-en {
     font-size: 16px;
+    font-weight: 700;
     font-variant: small-caps;
     float: left;
     clear: left;
     color: teal;
-    font-weight: 700;
   }
 }
 
 .sec-content {
-  margin-left: 20px;
   margin-bottom: 22px;
+  margin-left: 20px;
 }
 
 .timeline-wrapper {
   margin-top: -28px;
   ul {
-    border-left: 5px solid $black;
     padding-top: 28px;
+    border-left: 5px solid $black;
   }
   .timeline-title {
-    background: $black;
-    border-radius: 5px;
-    color: $white;
     font-size: 17px;
-    line-height: 1.33;
     font-weight: 400;
-    padding: 2px 0px 2px 22px;
-    margin-left: 10px;
+    line-height: 1.33;
     margin-bottom: 0;
+    margin-left: 10px;
+    padding: 2px 0 2px 22px;
+    color: $white;
+    border-radius: 5px;
+    background: $black;
   }
   &::after {
     @include content-after;
@@ -118,36 +117,39 @@ dd {
     font-size: 20px;
     font-weight: 700;
     float: left;
+    padding-bottom: 3px;
   }
   .language-cert-wrapper {
+    display: flex;
     overflow-y: hidden;
+    align-items: center;
   }
   .progress {
-    width: 78%;
-    @include media("<=phone") {
-      margin-left: 10px;
-      width: 75%;
-    }
-    @include media("print") {
-      width: 75%;
-      margin-left: 10px;
-    }
-    height:25px;
-    background:$black;
     float: left;
+    width: 78%;
+    height: 25px;
     margin-top: 1.8px;
     margin-bottom: 5px;
-    border-radius: 4px;
     margin-left: 26px;
+    border-radius: 4px;
+    background: $black;
+    @include media('<=phone') {
+      width: 75%;
+      margin-left: 10px;
+    }
+    @include media('print') {
+      width: 75%;
+      margin-left: 10px;
+    }
     .progress-bar {
-      background: teal;
       height: 100%;
       border-radius: 4px;
+      background: teal;
       .progress-label {
-        float: right;
-        color: $white;
         font-size: 19px;
+        float: right;
         margin-right: 10px;
+        color: $white;
       }
     }
   }
@@ -169,28 +171,28 @@ dd {
     margin: 6px 0 5px 26px;
   }
   .experience-task {
-    margin-left: 27px;
     font-size: 15px;
+    margin-left: 27px;
   }
   .experience-time {
+    font-size: 15px;
     float: right;
     margin-right: 10px;
-    font-size: 15px;
   }
   .experience-link {
     display: inline-block;
-    background: $white;
-    text-decoration: none;
+    float: right;
     margin-right: 10px;
     padding: 0 3px;
-    border-radius: 5px;
+    text-decoration: none;
     color: $black;
-    float: right;
+    border-radius: 5px;
+    background: $white;
   }
 }
 
 .skills {
-  @include media("print") {
+  @include media('print') {
     .skill-content {
       margin: 0;
     }
@@ -201,7 +203,7 @@ dd {
     margin: 6px 0 5px 26px;
   }
   .skill-description {
-    margin-left: 23px;
     font-size: 15px;
+    margin-left: 23px;
   }
 }
