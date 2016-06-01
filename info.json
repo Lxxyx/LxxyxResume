@@ -2,7 +2,8 @@
   "Author": "Lxxyx - Inspired by Joyee Cheung",
   "Guide": [
     "照着这里面的格式填写即可",
-    "PDF使用chrome浏览器的保存为PDF即可"
+    "PDF使用chrome浏览器的保存为PDF即可,放置于src/pdf文件夹。",
+    "PDF的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
   "title": "刘子健 - 个人简历",
   "aside": [{
