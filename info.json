@@ -72,8 +72,44 @@
     "content": {
       "position": "前端开发",
       "tasks": [
-        "工作室OA重构。使用`Vue+ES6+Webpack,实践组件化开发`",
-        "使用Vue+Vuex+Vue-Router,完成`SPA`的编写"
+        "工作室OA重构。使用 `Vue+ES6+Webpack ,实践组件化开发`",
+        "使用 Vue+Vuex+Vue-Router ,完成`SPA`的编写"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "蜂潮运动官网",
+      "links": [{
+        "name": "Demo",
+        "href": "http://www.117sport.com/"
+      }]
+    },
+    "content": {
+      "position": "前端开发",
+      "tasks": [
+        "重构蜂巢运动官网，优化性能，减少一半代码体积。",
+        "`解耦 HTML/CSS/JavaScript` , 提高可维护性",
+        "学习实践 `HTML5/CSS3` 相关知识"
+      ]
+    }
+  }, {
+    "title": {
+      "place": "NCU-Libary",
+      "links": [{
+        "name": "Demo",
+        "href": "http://lib.ncuhr.win"
+      }, {
+        "name": "源代码",
+        "href": "https://github.com/Lxxyx/nculib"
+      }]
+    },
+    "content": {
+      "position": "前端&Node.js",
+      "tasks": [
+        "后台基于`自身的 Koa2-Easy 与 ncu-Libary` 模块开发",
+        "通过爬虫获取数据，`实现搜索，订阅，自动续借`等功能",
+        "使用纯 `ES6/7` 编写。同时为 `ncu-Libary 编写单元测试`，确保稳定性",
+        "前端采用 Mint-UI 框架，适应 PC 端与移动端"
       ]
     }
   }, {
@@ -90,14 +126,14 @@
     "content": {
       "position": "Node.js",
       "tasks": [
-        "从自身需求出发，基于`Koa2`开发",
-        "使用`ES6/7`开发，使用`Async/Await`避免回调地狱",
-        "默认支持`COR跨域，Gzip`，开箱即用"
+        "从自身需求出发，基于 `Koa2` 开发",
+        "使用 `ES6/7` 开发，使用 `Async/Await` 避免回调地狱",
+        "默认支持 `COR跨域，Gzip` ，开箱即用"
       ]
     }
   }, {
     "title": {
-      "place": "博客系统（个人项目）",
+      "place": "博客系统",
       "links": [{
         "name": "源代码",
         "href": "https://github.com/guyskk/kkblog"
@@ -107,7 +143,7 @@
       "position": "前端开发",
       "tasks": [
         "负责博客页面的设计与编写",
-        "使用AmazeUI框架，实现页面自适应",
+        "使用 AmazeUI 框架，实现页面自适应",
         "学习`前端性能优化`，如JS代码后置，代码压缩打包等"
       ]
     }
@@ -137,24 +173,25 @@
       "skill": [{
         "name": "`HTML/CSS`",
         "description": [
-          "能够编写语义化的 `HTML`，熟悉`CSS`的使用，实现常用的布局与动画",
-          "了解`HTML5/CSS3`新特性，敢于尝试，能熟练使用部分新特性",
+          "能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用，实现常用的布局与动画",
+          "了解 `HTML5/CSS3` 新特性，敢于尝试，能熟练使用部分新特性",
           "不借助框架，能编写`响应式/移动端网页`"
         ]
       }, {
         "name": "`ECMAScript（JavaScript）`",
         "description": [
-          "熟悉JavaScript，`代码编写遵守规范`",
-          "了解`JavaScript面向对象知识`与`MVC`，`MVVM`等模式",
-          "学习ES6/7规范，不断实践并在新项目中应用，`对ES6新特性较为熟悉`"
+          "熟悉 JavaScript ，`代码编写遵守规范`",
+          "了解` JavaScript 面向对象知识`与 `MVC`，`MVVM` 等模式",
+          "学习 ES6/7 规范，不断实践并在新项目中应用，`对 ES6 新特性较为熟悉`",
+          "熟悉 JavaScript 异步编程，`掌握常见的异步解决方案`"
         ]
       }, {
         "name": "前端工程化实践",
         "description": [
-          "能熟练使用`Vue`并搭配Vuex与Vue-Router完成单页应用的编写",
-          "熟悉`jQuery/Bootstrap`等常见框架类库的使用",
-          "对React和Angular等业界主流框架有所了解",
-          "熟练使用`Gulp,Webpack`等代码构建工具"
+          "能熟练使用 `Vue` 并搭配 Vuex 与 Vue-Router 完成单页应用的编写",
+          "熟悉 `jQuery/Bootstrap` 等常见框架类库的使用",
+          "对 React 和 Angular 等业界主流框架有所了解",
+          "熟练使用 `Gulp,Webpack` 等代码构建工具"
         ]
       }]
     },
@@ -163,16 +200,16 @@
       "skill": [{
         "name": "`Node.js`",
         "description": [
-          "能够使用`Express/Koa2`等流行框架搭建后端服务器",
-          "能够`使用Node.js开发命令行程序`",
-          "熟练使用`Node类库编写爬虫`，爬取所需数据",
-          "能配合MongoDB开发简单的CRUD应用"
+          "能够使用 `Express/Koa2` 等框架搭建后端服务器",
+          "能够`使用 Node.js 开发命令行程序`，并发布至 NPM ",
+          "熟练使用` Node 类库编写爬虫`，爬取所需数据",
+          "能配合 MongoDB 开发简单的 CRUD 应用"
         ]
       }, {
         "name": "其它知识",
         "description": [
-          "熟悉`HTTP常见知识`,对HTTP2/WebSocket有所了解",
-          "简单的完成`Nginx`的配置，实现反向代理"
+          "熟悉` HTTP 常见知识`,对 HTTP2/WebSocket 有所了解",
+          "简单的完成 `Nginx` 的配置，实现反向代理"
         ]
       }]
     },
@@ -182,16 +219,16 @@
         "name": "`计算机基础`",
         "description": [
           "计算机基础较好，`对计算机与编程有极大热情，自学能力较强`",
-          "在校选课与MOOC自学《计算机科学导论》，《计算机网络》，《操作系统》等课程",
-          "自学`数据结构与算法`，用JavaScript实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
-          "`坚持写原创技术博客，月浏览量2.5k`，在Github有自己的开源项目"
+          "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》，《操作系统》等课程",
+          "自学`数据结构与算法`，用 JavaScript 实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
+          "`坚持写原创技术博客，月浏览量2.5k`，在 Github 有自己的开源项目"
         ]
       }, {
         "name": "工具使用",
         "description": [
-          "使用Linux六个月，`在Linux环境下完成日常工作`",
-          "熟练使用Git等团队协作工具",
-          "日常使用`Sublime Text`进行开发，能简单的操作Vim"
+          "使用 Linux 六个月，`在 Linux 环境下完成日常工作`",
+          "熟练使用 Git 等团队协作工具",
+          "日常使用 `Sublime Text` 进行开发，能简单的操作 Vim "
         ]
       }]
     }

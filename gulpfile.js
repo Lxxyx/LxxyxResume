@@ -55,6 +55,14 @@ function highlight(locals) {
     locals = locals.replace(find, bold)
   }
 
+  // var reEng = new RegExp('[a-z]+\/?-?[a-z]*', 'i')
+
+  // while(reEng.test(locals)) {
+  //   var find = reEng.exec(locals)[0]
+  //   var bold = ` ${find} `
+  //   locals = locals.replace(find, bold)
+  // }
+
   return JSON.parse(locals)
 }
 
