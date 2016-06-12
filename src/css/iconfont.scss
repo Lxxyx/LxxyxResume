@@ -1,47 +1,49 @@
 @mixin iconfont {
-  font-family: "iconfont" !important;
+  font-family: 'iconfont' !important;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
   padding-right: 3px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+
 @mixin icon-big {
-  color: #fff;
-  background: #333;
   font-size: 24px;
-  padding: 6px;
-  border-radius: 50%;
+  line-height: 32px;
+  display: inline-block;
+  float: left;
   width: 32px;
   height: 32px;
-  display: inline-block;
+  padding: 6px;
   text-align: center;
-  float: left;
-  line-height: 32px;
+  color: #fff;
+  border-radius: 50%;
+  background: #333;
 }
 
 @mixin icon-medium {
-  color: #fff;
-  background: teal;
-  padding: 6px;
-  border-radius: 50%;
-  text-align: center;
-  width: 26px;
-  height: 26px;
   font-size: 20px;
   line-height: 26px;
   position: absolute;
+  width: 26px;
+  height: 26px;
   margin-top: -7px;
   margin-left: 3px;
   margin-left: -22px;
+  padding: 6px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: teal;
 }
 
 @mixin icon-small {
-  color: #333;
   display: inline-block;
   padding-right: 3px;
+  color: #333;
 }
+
 
 @font-face {
   font-family: "iconfont";
@@ -55,114 +57,114 @@
 }
 
 .icon-weibo:before {
-  content: "\e600";
+  content: '\e600';
   @include iconfont;
 }
 
 .icon-mail:before {
-  content: "\e602";
+  content: '\e602';
   @include iconfont;
 }
 
 .icon-chat:before {
-  content: "\e601";
+  font-size: 26px;
+  content: '\e601';
   @include iconfont;
   @include icon-big;
-  font-size: 26px;
 }
 
 .icon-star:before {
-  content: "\e606";
-  @include iconfont;
   font-size: 20px;
   padding-right: 3px;
+  content: '\e606';
+  @include iconfont;
 }
 
 .icon-wechat:before {
-  content: "\e601";
+  content: '\e601';
   @include iconfont;
 }
 
 .icon-book:before {
-  content: "\e607";
+  content: '\e607';
   @include iconfont;
   @include icon-big;
 }
 
 .icon-gears:before {
-  content: "\e608";
+  content: '\e608';
   @include iconfont;
   @include icon-medium;
 }
 
 .icon-cloud:before {
-  content: "\e609";
+  font-size: 29px;
+  content: '\e609';
   @include iconfont;
   @include icon-medium;
-  font-size: 29px;
 }
 
 .icon-gear:before {
-  content: "\e60a";
+  content: '\e60a';
   @include iconfont;
   @include icon-small;
 }
 
 .icon-gear-big:before {
-  content: "\e60a";
+  content: '\e60a';
   @include iconfont;
   @include icon-big;
 }
 
 .icon-rocket:before {
-  content: "\e60b";
+  font-size: 26px;
+  content: '\e60b';
   @include iconfont;
   @include icon-big;
-  font-size: 26px;
 }
 
 .icon-github:before {
-  content: "\e603";
+  content: '\e603';
   @include iconfont;
 }
 
 .icon-blog:before {
-  content: "\e604";
+  content: '\e604';
   @include iconfont;
 }
 
 .icon-bag:before {
-  content: "\e60c";
+  font-size: 26px;
+  content: '\e60c';
   @include iconfont;
   @include icon-medium;
-  font-size: 26px;
 }
 
 .icon-wrench:before {
-  content: "\e60d";
+  font-size: 28px;
+  content: '\e60d';
   @include iconfont;
   @include icon-big;
-  font-size: 28px;
 }
 
 .icon-flags:before {
-  content: "\e60f";
+  content: '\e60f';
   @include iconfont;
   @include icon-medium;
 }
 
 .icon-hat:before {
-  content: "\e610";
+  content: '\e610';
   @include iconfont;
   @include icon-small;
 }
 
 .icon-trophy:before {
-  content: "\e60e";
+  content: '\e60e';
   @include iconfont;
 }
 
 .icon-phone:before {
-  content: "\e611";
+  content: '\e611';
   @include iconfont;
 }
