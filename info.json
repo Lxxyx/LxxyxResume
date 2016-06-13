@@ -152,7 +152,7 @@
       "place": "个人简历",
       "links": [{
         "name": "Demo",
-        "href": "http://115.159.148.159"
+        "href": "http://lxxyx.github.io/"
       }, {
         "name": "源代码",
         "href": "https://github.com/Lxxyx/LxxyxResume"
@@ -181,7 +181,7 @@
         "name": "`ECMAScript（JavaScript）`",
         "description": [
           "熟悉 JavaScript ，`代码编写遵守规范`",
-          "了解` JavaScript 面向对象知识`与 `MVC`，`MVVM` 等模式",
+          "了解` JavaScript 面向对象知识`与 `MV*` 模式",
           "学习 ES6/7 规范，不断实践并在新项目中应用，`对 ES6 新特性较为熟悉`",
           "熟悉 JavaScript 异步编程，`掌握常见的异步解决方案`"
         ]
