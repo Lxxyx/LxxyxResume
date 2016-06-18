@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp clean && gulp",
-    "deploy": "gulp && gulp deploy"
+    "deploy": "gulp && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
   },
   "author": "Lxxyx",
   "license": "MIT",
