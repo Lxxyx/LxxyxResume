@@ -133,22 +133,6 @@
     }
   }, {
     "title": {
-      "place": "博客系统",
-      "links": [{
-        "name": "源代码",
-        "href": "https://github.com/guyskk/kkblog"
-      }]
-    },
-    "content": {
-      "position": "前端开发",
-      "tasks": [
-        "负责博客页面的设计与编写",
-        "前端使用 AmazeUI 框架，实现页面自适应",
-        "学习`前端性能优化`，如JS代码后置，代码压缩打包等"
-      ]
-    }
-  }, {
-    "title": {
       "place": "个人简历",
       "links": [{
         "name": "Demo",
@@ -191,7 +175,7 @@
           "能熟练使用 `Vue` 并搭配 Vuex 与 Vue-Router 完成单页应用的编写",
           "熟悉 `jQuery/Bootstrap` 等常见框架类库的使用",
           "对 React 和 Angular 等业界主流框架有所了解",
-          "熟练使用 `Gulp,Webpack` 等代码构建工具"
+          "熟练使用 `Gulp, Webpack` 等代码构建工具"
         ]
       }]
     },
@@ -226,9 +210,9 @@
       }, {
         "name": "工具使用",
         "description": [
-          "使用 Linux 六个月，`在 Linux 环境下完成日常工作`",
-          "熟练使用 Git 等团队协作工具",
-          "日常使用 `Sublime Text` 进行开发，能简单的操作 Vim "
+          "一年 Linux 使用经验，`使用 Linux 作为日常工作系统`",
+          "熟练使用 Git 等代码管理与团队协作工具",
+          "日常使用 `Sublime Text / Atom ` 进行开发，能简单的操作 Vim "
         ]
       }]
     }
