@@ -80,7 +80,7 @@ block experience
               span.experience-place= val.title.place
               if val.title.time
                 time.experience-time= val.title.time
-              else
+              else if val.title.links
                 each link in val.title.links
                   a.experience-link(href=link.href target="_blank")= link.name
             dl.experience-content
