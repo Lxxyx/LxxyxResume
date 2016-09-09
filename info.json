@@ -230,9 +230,9 @@
       }, {
         "name": "工具使用",
         "description": [
-          "一年 Linux 使用经验，`使用 Ubuntu 作为日常工作系统`",
-          "熟练使用 Git 等代码管理与团队协作工具，了解常见Gitflow",
-          "日常使用 `Sublime Text / Atom ` 进行开发，能简单的操作 Vim "
+          "一年 Linux 使用经验，`使用 Ubuntu 作为日常系统`",
+          "熟练使用 Git 等代码管理与团队协作工具，了解常见 Gitflow 并尝试使用",
+          "日常使用 `Sublime Text / Atom ` 进行开发，使用 `VS Code` 调试 `Node` 应用"
         ]
       }]
     }
