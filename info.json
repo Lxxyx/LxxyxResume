@@ -74,7 +74,7 @@
       "position": "前端开发",
       "tasks": [
         "使用 `Vue` + `Webpack` , 开发单页应用",
-        "使用 `Cordova` 开发 `Android/iOS App` ",
+        "使用 `React Native` 开发 `Android/iOS App` ",
         "负责工作室日常前端工作安排，定期开展前端分享会，解决疑难 BUG ",
         "制定工作室前端技术栈，前端代码规范，以及新人前端学习路线"
       ]
@@ -88,7 +88,7 @@
       "position": " Web 前端实习生",
       "tasks": [
         "使用 `ES6 + Webpack/Rollup` 重构大量老代码，提高代码可读性与可维护性",
-        "使用 `Koa2 + NeDb + Vue` , 开发内部生日提醒与查询系统",
+        "使用 `Koa2 + NeDb + Vue` ,开发生日提醒与查询系统",
         "`深入学习移动端 Web 开发与移动端常见调试方式`"
       ]
     }
@@ -123,9 +123,9 @@
       "position": "前端&Node.js",
       "tasks": [
         "后台基于`自身的 Koa2-Easy 与 ncu-Libary` 模块开发",
-        "通过爬虫获取数据，`实现搜索，订阅，自动续借`等功能",
-        "使用纯 `ES6/7` 编写。同时为 `ncu-Libary 编写单元测试`，确保稳定性",
-        "前端采用 Mint-UI 框架，适应 PC 端与移动端"
+        "通过爬虫获取数据，`实现图书搜索，订阅，自动续借`等功能",
+        "使用纯 `ES6/7` 编写。同时`为爬虫模块编写单元测试`，确保稳定性",
+        "前端采用 Vue & Mint-UI 框架，并使用Cordova封装为App"
       ]
     }
   }, {
@@ -142,9 +142,9 @@
     "content": {
       "position": "Node.js",
       "tasks": [
-        "从自身需求出发，基于 `Koa2` 开发",
-        "使用 `ES6/7` 开发，使用 `Async/Await` 避免回调地狱",
-        "默认支持 `COR跨域，Gzip, 文件上传` ，开箱即用"
+        "基于 `Koa2` ，从自身需求出发",
+        "默认支持 `COR跨域，Gzip ,文件上传`等功能",
+        "编写模板中间件 `koa-Arttemplate` 与脚手架"
       ]
     }
   }, {
@@ -191,8 +191,8 @@
           "能熟练使用 `Vue` 并搭配 Vue相关工具 完成单页和常见应用的编写",
           "熟悉 jQuery/Bootstrap 等常见框架类库的使用",
           "对 React 和 Angular 等业界主流框架有所了解",
-          "能使用 `Cordova` , `Weex` 开发 `Hybrid App` ",
-          "熟练使用 `Gulp , Webpack, Rollup` 等代码构建工具"
+          "能使用 `React Native` , `Cordova` 开发 `Hybrid App` ,对 `Weex` 等项目保持关注中",
+          "熟练使用 `Gulp , Webpack , Rollup` 等代码构建工具"
         ]
       }]
     },
@@ -223,7 +223,7 @@
         "name": "`计算机基础`",
         "description": [
           "计算机基础较好，`对计算机与编程有极大热情，自学能力较强`",
-          "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》，《操作系统》等课程",
+          "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》，《操作系统》，《数据库原理》等课程",
           "自学`数据结构与算法`，用 JavaScript 实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
           "`坚持写原创技术博客，月浏览量3k`，在 Github 有自己的开源项目"
         ]
@@ -231,8 +231,8 @@
         "name": "工具使用",
         "description": [
           "一年 Linux 使用经验，`使用 Ubuntu 作为日常系统`",
-          "熟练使用 Git 等代码管理与团队协作工具，了解常见 Gitflow 并尝试使用",
-          "日常使用 `Sublime Text / Atom ` 进行开发，使用 `VS Code` 调试 `Node` 应用"
+          "熟练使用 Git 等代码管理与团队协作工具，了解常见 Gitflow 并尝试在团队内推广使用",
+          "日常使用 `Sublime Text / Atom ` 进行开发"
         ]
       }]
     }
