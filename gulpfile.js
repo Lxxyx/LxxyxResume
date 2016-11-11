@@ -6,6 +6,7 @@ var copy = require('gulp-copy')
 var rimrafPromise = require('rimraf-promise')
 var ghPages = require('gulp-gh-pages')
 var fs = require('fs')
+var connect = require('gulp-connect')
 
 gulp.task('resume-sass', function () {
   gulp.src('src/css/resume.scss')
@@ -15,6 +16,7 @@ gulp.task('resume-sass', function () {
       cascade: false
     }))
     .pipe(gulp.dest('dist/css/'))
+    .pipe(connect.reload())
 })
 
 gulp.task('icon-sass', function () {
@@ -34,12 +36,18 @@ gulp.task('sass:watch', function () {
 })
 
 gulp.task('json2jade', function () {
-  var locals = highlight(require('./info.json'))
+  var info = JSON.parse(fs.readFileSync('./info.json', 'utf-8'))
+  var locals = highlight(info)
   gulp.src('./src/jade/index.jade')
     .pipe(jade({
       locals: locals
     }))
     .pipe(gulp.dest('./dist/'))
+    .pipe(connect.reload())
+})
+
+gulp.task('json2jade:watch', function () {
+  gulp.watch('./info.json', ['json2jade'])
 })
 
 function src2dist(dir) {
@@ -70,5 +78,15 @@ gulp.task('deploy', () => {
     branch: 'master'
   }))
 })
+
+gulp.task('webserver', function () {
+    connect.server({
+        root: './dist',
+        livereload: true,
+        port:9000
+    })
+})
+
+gulp.task('dev', ['icon-sass', 'resume-sass', 'json2jade', 'copy', 'json2jade:watch', 'sass:watch', 'webserver'])
 
 gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
