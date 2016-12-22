@@ -81,6 +81,18 @@
     }
   }, {
     "title": {
+      "place": "北京百度",
+      "time": "2016.10-至今"
+    },
+    "content": {
+      "position": " Web 前端实习生",
+      "tasks": [
+        "参与某后台系统的开发与重构",
+        "学习公司开发流程，制度等软知识"
+      ]
+    }
+  }, {
+    "title": {
       "place": "北京闪银奇异",
       "time": "2016.07-2016.08"
     },
@@ -96,7 +108,7 @@
     "title": {
       "place": "蜂潮运动官网",
       "links": [{
-        "name": "Demo",
+        "name": "Preview",
         "href": "http://www.117sport.com/"
       }]
     },
@@ -147,25 +159,6 @@
         "编写模板中间件 `koa-Arttemplate` 与脚手架"
       ]
     }
-  }, {
-    "title": {
-      "place": "个人简历",
-      "links": [{
-        "name": "Demo",
-        "href": "http://lxxyx.github.io/"
-      }, {
-        "name": "源代码",
-        "href": "https://github.com/Lxxyx/LxxyxResume"
-      }]
-    },
-    "content": {
-      "position": "前端&Node.js",
-      "tasks": [
-        "仿写张秋怡学姐的简历，尝试学习移动端网页设计",
-        "前端使用 `Gulp+Scss` 完成响应式设计",
-        "后台使用 `Gulp+Jade` 完成网页生成与一键部署至 Github Pages"
-      ]
-    }
   }],
   "skills": {
     "flags": {
@@ -182,13 +175,13 @@
         "description": [
           "熟悉 JavaScript ，`代码编写遵守规范`",
           "了解` JavaScript 面向对象知识`与 `MV*` 模式",
-          "学习 ES6/7 规范，不断实践并在新项目中应用，`对 ES6 新特性较为熟悉`",
+          "学习 ES6/7 规范，不断实践并在新项目中应用，`熟练使用 ES6 开发项目 `",
           "熟悉 JavaScript 异步编程，`掌握常见的异步解决方案`"
         ]
       }, {
         "name": "前端工程化实践",
         "description": [
-          "能熟练使用 `Vue` 并搭配 Vue相关工具 完成单页和常见应用的编写",
+          "能熟练使用 `Vue` 并搭配 Vue 相关工具 完成单页和常见应用的编写",
           "熟悉 jQuery/Bootstrap 等常见框架类库的使用",
           "对 React 和 Angular 等业界主流框架有所了解",
           "能使用 `React Native` , `Cordova` 开发 `Hybrid App` ,对 `Weex` 等项目保持关注中",
@@ -201,9 +194,8 @@
       "skill": [{
         "name": "`Node.js`",
         "description": [
-          "使用 `Express/Koa2` 等框架搭建后端服务器",
-          "`使用 Node.js 开发命令行程序`，并发布至 NPM ",
-          "熟练使用` Node 类库编写爬虫`，爬取所需数据",
+          "使用 `TypeScript + Express/Koa2` 等框架搭建后端服务器",
+          "`使用 Node.js 开发命令行/爬虫程序`，并发布至 NPM ",
           "能配合 MongoDB 开发简单的 CRUD 应用",
           "使用 ` Mocha/Ava `编写单元测试 并通过 `Travis.ci/CodeCov` 实现项目持续集成"
         ]
@@ -211,7 +203,7 @@
         "name": "其它知识",
         "description": [
           "熟悉` HTTP 常见知识`,对 HTTP2/WebSocket 等新知识有所了解",
-          "了解 `TDD/BDD` 开发方式， 使用 `TDD` 开发个人开源项目",
+          "日常使用 `Docker` 完成项目的构建与部署",
           "完成 `Nginx` 的配置，实现反向代理等功能",
           "编写简单的` shell 脚本`，提升开发效率"
         ]

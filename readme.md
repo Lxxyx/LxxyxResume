@@ -1,9 +1,9 @@
 # Introduction
 
-### 简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/)
+简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/)
 
 简历基于Gulp+Scss+Jade。  
-访问地址：[Lxxyx的简历](lxxyx.github.io)
+访问地址：[Lxxyx的简历](https://lxxyx.github.io)
 
 ### 运行方式：
 替换info.json的内容，运行`gulp`即可。  

@@ -71,11 +71,12 @@ gulp.task('clean', () => {
   rimrafPromise('./dist/')
 })
 
-gulp.task('deploy', () => {
+gulp.task('deploy', function () {
   gulp.src('./dist/**/*')
   .pipe(ghPages({
     remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
-    branch: 'master'
+    branch: 'master',
+    force: true
   }))
 })
 
