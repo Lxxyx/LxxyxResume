@@ -176,7 +176,7 @@
           "使用 `TypeScript + Express/Koa2` 等框架搭建后端服务",
           "`使用 Node.js 开发命令行/爬虫程序`，并发布至 NPM ",
           "能配合 MongoDB 开发简单的 CRUD 应用",
-          "使用 ` Mocha/Ava/Jest `编写单元测试 并通过 `Travis.ci/CodeCov` 实现项目持续集成"
+          "使用 ` Mocha/Jest/Ava `编写单元测试 并通过 `Travis.ci/CodeCov` 实现项目持续集成"
         ]
       }, {
         "name": "其它知识",
