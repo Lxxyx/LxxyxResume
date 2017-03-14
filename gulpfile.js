@@ -72,7 +72,7 @@ gulp.task('clean', () => {
 })
 
 gulp.task('deploy', function () {
-  gulp.src('./dist/**/*')
+  return gulp.src('./dist/**/*')
   .pipe(ghPages({
     remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
     branch: 'master'

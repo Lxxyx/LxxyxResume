@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp clean && gulp",
     "dev": "gulp dev",
-    "deploy": "gulp && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
+    "deploy": "npm run start && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
   },
   "author": "Lxxyx",
   "license": "MIT",
