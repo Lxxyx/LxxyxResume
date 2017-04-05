@@ -67,3 +67,6 @@ dist
 # Optional REPL history
 .DS_Store
 .node_repl_history
+.vscode
+.vscode/
+.vscode/*
