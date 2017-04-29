@@ -13,6 +13,19 @@ $white: #fff;
 
 section {
   margin-bottom: 14px;
+  @include media('print') {
+    margin-bottom: 8px;
+  }
+}
+
+@include media('print') {
+  dl {
+    margin: 10px 0;
+  }
+  dd {
+    line-height: 1.2;
+    font-size: 14;
+  }
 }
 
 dd {
@@ -41,12 +54,13 @@ dd {
 .content {
   overflow: hidden;
   padding: 30px 45px;
+  // padding: 20px 20px;
   background: $white;
   @include media('<=phone') {
     padding: 30px 10px;
   }
   @include media('print') {
-    padding: 30px 20px!important;
+    padding: 20px 20px!important;
   }
 }
 
@@ -156,6 +170,9 @@ dd {
   .language-skills {
     li {
       line-height: 1.4;
+      @include media('print') {
+        line-height: 1.2;
+      }
     }
   }
 }
@@ -173,8 +190,14 @@ dd {
   .experience-task {
     font-size: 15px;
     margin-left: 27px;
+    @include media('print') {
+      font-size: 14px;
+    }
   }
   .experience-time {
+    @include media('print') {
+      font-size: 14px;
+    }
     font-size: 15px;
     float: right;
     margin-right: 10px;

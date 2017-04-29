@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp clean && gulp",
     "dev": "gulp dev",
-    "deploy": "npm run start && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
+    "deploy": "gulp pdf && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
   },
   "author": "Lxxyx",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "jade": "^1.11.0",
+    "puppeteer": "^0.9.0",
     "rimraf-promise": "^2.0.0"
   },
   "devDependencies": {

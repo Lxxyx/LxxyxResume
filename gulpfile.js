@@ -1,15 +1,16 @@
-var gulp = require('gulp')
-var sass = require('gulp-sass')
-var autoprefixer = require('gulp-autoprefixer')
-var jade = require('gulp-jade')
-var copy = require('gulp-copy')
-var rimrafPromise = require('rimraf-promise')
-var ghPages = require('gulp-gh-pages')
-var fs = require('fs')
-var connect = require('gulp-connect')
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const autoprefixer = require('gulp-autoprefixer')
+const jade = require('gulp-jade')
+const copy = require('gulp-copy')
+const rimrafPromise = require('rimraf-promise')
+const ghPages = require('gulp-gh-pages')
+const fs = require('fs')
+const connect = require('gulp-connect')
+const generatePdf = require('./generate_pdf')
 
 gulp.task('resume-sass', function () {
-  gulp.src('src/css/resume.scss')
+  gulp.src('src/scss/resume.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 4 versions'],
@@ -20,19 +21,20 @@ gulp.task('resume-sass', function () {
 })
 
 gulp.task('icon-sass', function () {
-  gulp.src('src/css/iconfont.scss')
+  gulp.src('src/scss/iconfont.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 4 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('dist/iconfont/'))
+    .pipe(connect.reload())
 })
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./src/css/resume.scss', ['resume-sass'])
-  gulp.watch('./src/css/iconfont.scss', ['icon-sass'])
-  gulp.watch('./src/css/components/*.scss', ['resume-sass'])
+  gulp.watch('./src/scss/resume.scss', ['resume-sass'])
+  gulp.watch('./src/scss/iconfont.scss', ['icon-sass'])
+  gulp.watch('./src/scss/components/*.scss', ['resume-sass'])
 })
 
 gulp.task('json2jade', function () {
@@ -74,20 +76,26 @@ gulp.task('clean', () => {
 
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
-  .pipe(ghPages({
-    remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
-    branch: 'master'
-  }))
+    .pipe(ghPages({
+      remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
+      branch: 'master'
+    }))
 })
 
 gulp.task('webserver', function () {
-    connect.server({
-        root: './dist',
-        livereload: true,
-        port:9000
-    })
+  connect.server({
+    root: './dist',
+    livereload: true,
+    port: 9000
+  })
 })
 
-gulp.task('dev', ['icon-sass', 'resume-sass', 'json2jade', 'copy', 'json2jade:watch', 'sass:watch', 'webserver'])
+gulp.task('dev', ['default', 'json2jade:watch', 'sass:watch', 'webserver'])
 
 gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
+
+gulp.task('pdf', ['default', 'webserver'], async () => {
+  await generatePdf('http://localhost:9000')
+  connect.serverClose()
+  process.exit(0)
+})

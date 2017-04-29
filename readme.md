@@ -5,6 +5,15 @@
 简历基于Gulp+Scss+Jade。  
 访问地址：[Lxxyx的简历](https://lxxyx.github.io)
 
+### 要求
+
+**Node 7.10及以上**
+
+### 特点
+
+自动生成PDF版简历
+在 generate_pdf 与 info.json 中，替换 LxxyxResume.pdf 为你自己想要的名字
+
 ### 运行方式：
 替换info.json的内容，运行`gulp`即可。  
 生成内容可在dist文件夹查看。
