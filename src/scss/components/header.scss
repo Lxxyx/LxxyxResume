@@ -3,10 +3,10 @@ header {
   padding: 30px 45px;
   color: #fff;
   background-color: #333;
-  @include media('<tablet') {
+  @include media("<tablet") {
     padding: 30px 10px;
   }
-  @include media('print') {
+  @include media("print") {
     padding: 20px 45px;
   }
 }
@@ -14,10 +14,10 @@ header {
 .qrcode {
   float: left;
   margin: 0;
-  @include media('<=desktop') {
+  @include media("<=desktop") {
     display: none;
   }
-  @include media('print') {
+  @include media("print") {
     display: block;
     margin-top: 5px;
   }
@@ -30,14 +30,14 @@ header {
 .title {
   float: right;
   text-align: right;
-  @include media('<tablet') {
+  @include media("<tablet") {
     float: none;
     text-align: center;
     h2 {
       padding: 0 6px;
     }
   }
-  @include media('print') {
+  @include media("print") {
     float: right;
     text-align: right;
   }
@@ -61,13 +61,13 @@ address {
 
 .phone {
   display: none;
-  @include media('print') {
+  @include media("print") {
     display: block;
   }
 }
 
 .wechat {
-  @include media('print') {
+  @include media("print") {
     display: none;
   }
 }
@@ -76,13 +76,13 @@ address {
   font-size: 18px;
   float: left;
   padding-left: 16px;
-  @include media('<=desktop') {
+  @include media("<=desktop") {
     margin-top: 5px;
     li {
       line-height: 1.6;
     }
   }
-  @include media('print') {
+  @include media("print") {
     line-height: 1.4;
     margin-top: 0;
   }
@@ -91,7 +91,7 @@ address {
     line-height: 1.4;
   }
   a {
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
     text-decoration: none;
     color: #fff;
     &:hover {

@@ -1,6 +1,6 @@
 footer {
   margin: 15px 6px;
-  @include media('print') {
+  @include media("print") {
     display: none;
   }
   a {

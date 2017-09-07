@@ -6,19 +6,19 @@ $white: #fff;
   height: 0;
   margin-top: -23px;
   margin-left: 15px;
-  content: '';
+  content: "";
   border: 8px solid $black;
   border-radius: 100%;
 }
 
 section {
   margin-bottom: 14px;
-  @include media('print') {
+  @include media("print") {
     margin-bottom: 8px;
   }
 }
 
-@include media('print') {
+@include media("print") {
   dl {
     margin: 10px 0;
   }
@@ -33,15 +33,15 @@ dd {
 }
 
 .column-6 {
-  @include media('>=desktop') {
+  @include media(">=desktop") {
     float: left;
     width: 50%;
   }
-  @include media('<desktop') {
+  @include media("<desktop") {
     width: 100%;
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
-  @include media('print') {
+  @include media("print") {
     float: left;
     width: 50%;
   }
@@ -56,11 +56,11 @@ dd {
   padding: 30px 45px;
   // padding: 20px 20px;
   background: $white;
-  @include media('<=phone') {
+  @include media("<=phone") {
     padding: 30px 10px;
   }
-  @include media('print') {
-    padding: 20px 20px!important;
+  @include media("print") {
+    padding: 20px 20px !important;
   }
 }
 
@@ -147,11 +147,11 @@ dd {
     margin-left: 26px;
     border-radius: 4px;
     background: $black;
-    @include media('<=phone') {
+    @include media("<=phone") {
       width: 75%;
       margin-left: 10px;
     }
-    @include media('print') {
+    @include media("print") {
       width: 75%;
       margin-left: 10px;
     }
@@ -170,7 +170,7 @@ dd {
   .language-skills {
     li {
       line-height: 1.4;
-      @include media('print') {
+      @include media("print") {
         line-height: 1.2;
       }
     }
@@ -190,12 +190,12 @@ dd {
   .experience-task {
     font-size: 15px;
     margin-left: 27px;
-    @include media('print') {
+    @include media("print") {
       font-size: 14px;
     }
   }
   .experience-time {
-    @include media('print') {
+    @include media("print") {
       font-size: 14px;
     }
     font-size: 15px;
@@ -215,7 +215,7 @@ dd {
 }
 
 .skills {
-  @include media('print') {
+  @include media("print") {
     .skill-content {
       margin: 0;
     }

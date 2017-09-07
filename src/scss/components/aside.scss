@@ -3,10 +3,10 @@ aside {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
-  @include media('print') {
-    display: none!important;
+  @include media("print") {
+    display: none !important;
   }
-  @include media('<tablet') {
+  @include media("<tablet") {
     position: relative;
     top: 0;
     right: auto;
@@ -19,7 +19,7 @@ aside {
     li {
       display: table-cell;
       text-align: center;
-      border-radius: 0!important;
+      border-radius: 0 !important;
     }
     a {
       padding-right: 0;
@@ -28,9 +28,9 @@ aside {
   }
   li {
     margin-top: 6px;
-    transition: .2s linear;
+    transition: 0.2s linear;
     border-radius: 5px 0 0 5px;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     a {
       display: inline-block;
       width: 100%;
@@ -39,7 +39,7 @@ aside {
       color: #fff;
     }
     &:hover {
-      background-color: rgba(55, 55, 55, .8);
+      background-color: rgba(55, 55, 55, 0.8);
     }
   }
 }
