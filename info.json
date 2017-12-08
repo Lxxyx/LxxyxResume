@@ -5,7 +5,7 @@
     "PDF会自动生成，文件名可以在 generate_pdf.js 里改",
     "PDF的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
-  "title": "刘子健 - 前端工程师",
+  "title": "刘子健 - 前端工程师（@淘宝FED-已转正）",
   "aside": [{
     "href": "https://github.com/Lxxyx/LxxyxResume",
     "content": "源代码"
@@ -73,87 +73,89 @@
         "tasks": [
           "使用 Weex/Rax 开发线上页面",
           "使用 React 开发后台管理系统",
-          "学习性能优化相关知识"
+          "学习性能优化相关知识",
+          "2017.09.02 `转正`"
         ]
       }
     },
     {
-    "title": {
-      "place": "家园工作室",
-      "time": "2015.3-2017.06"
-    },
-    "content": {
-      "position": "前端开发",
-      "tasks": [
-        "使用 `React/Vue` , 开发单页应用",
-        "使用 `React Native` 开发 `Android/iOS App` ",
-        "负责工作室日常前端工作安排，定期开展前端分享会，解决疑难 BUG ",
-        "制定工作室前端技术栈，代码规范及新人前端学习路线"
-      ]
+      "title": {
+        "place": "家园工作室",
+        "time": "2015.3-2017.06"
+      },
+      "content": {
+        "position": "前端开发",
+        "tasks": [
+          "使用 `React/Vue` , 开发单页应用",
+          "使用 `React Native` 开发 `Android/iOS App` ",
+          "负责工作室日常前端工作安排，定期开展前端分享会，解决疑难 BUG ",
+          "制定工作室前端技术栈，代码规范及新人前端学习路线"
+        ]
+      }
+    }, {
+      "title": {
+        "place": "百度企业产品用户体验中心",
+        "time": "2016.10-2017.2"
+      },
+      "content": {
+        "position": " Web 前端实习生",
+        "tasks": [
+          "参与某后台系统的开发与重构, 使用 Riot 完成项目",
+          "学习前端技术选型，代码可读性优化等知识",
+          "学习公司开发流程，制度等软知识"
+        ]
+      }
+    }, {
+      "title": {
+        "place": "北京闪银奇异",
+        "time": "2016.07-2016.08"
+      },
+      "content": {
+        "position": " Web 前端实习生",
+        "tasks": [
+          "使用 `ES6 + Webpack/Rollup` 重构大量老代码，提高代码可读性与可维护性",
+          "使用 `Koa2 + NeDb + Vue` ,开发生日提醒与查询系统",
+          "`深入学习移动端 Web 开发与移动端常见调试方式`"
+        ]
+      }
+    }, {
+      "title": {
+        "place": "南大家园-iNCU",
+        "time": "2017.01-至今",
+        "links": [{
+          "name": "下载链接",
+          "href": "http://incu.ncuos.com/"
+        }]
+      },
+      "content": {
+        "position": "客户端/前端/后台",
+        "tasks": [
+          "使用 `React Native` + `TypeScript` + `Redux & Redux-saga` 完成整个App",
+          "负责 App 的性能优化，提升运行速度",
+          "负责 Android/iOS SDK集成，App更新，数据统计等 `React Native 原生拓展功能的开发`",
+          "负责课程表/反馈/空闲教室等功能的后端开发，并使用 `Docker` 部署",
+          "`编写100+单元测试`, 确保 App 迭代，重构，日常运行的稳定性，部分功能采取 TDD 方式开发",
+          "注重代码可维护性与健壮性，`多次重构以提高代码可维护性`"
+        ]
+      }
+    }, {
+      "title": {
+        "place": "Koa2-Easy",
+        "links": [{
+          "name": "源代码",
+          "href": "https://github.com/Lxxyx/koa2-easy"
+        }]
+      },
+      "content": {
+        "position": "Node.js",
+        "tasks": [
+          "基于 `Koa2`，从自身需求出发，加速开发",
+          "默认支持 `CORS跨域，Gzip，文件上传`等功能，",
+          "编写模板中间件 `Koa-ArtTemplate` 与脚手架，支持生成 TypeScript 模板，上手即用"
+        ]
+      }
     }
-  }, {
-    "title": {
-      "place": "百度企业产品用户体验中心",
-      "time": "2016.10-2017.2"
-    },
-    "content": {
-      "position": " Web 前端实习生",
-      "tasks": [
-        "参与某后台系统的开发与重构, 使用 Riot 完成项目",
-        "学习前端技术选型，代码可读性优化等知识",
-        "学习公司开发流程，制度等软知识"
-      ]
-    }
-  }, {
-    "title": {
-      "place": "北京闪银奇异",
-      "time": "2016.07-2016.08"
-    },
-    "content": {
-      "position": " Web 前端实习生",
-      "tasks": [
-        "使用 `ES6 + Webpack/Rollup` 重构大量老代码，提高代码可读性与可维护性",
-        "使用 `Koa2 + NeDb + Vue` ,开发生日提醒与查询系统",
-        "`深入学习移动端 Web 开发与移动端常见调试方式`"
-      ]
-    }
-  }, {
-    "title": {
-      "place": "南大家园-iNCU",
-      "time": "2017.01-至今",
-      "links": [{
-        "name": "下载链接",
-        "href": "http://incu.ncuos.com/"
-      }]
-    },
-    "content": {
-      "position": "客户端/前端/后台",
-      "tasks": [
-        "使用 `React Native` + `TypeScript` + `Redux & Redux-saga` 完成整个App",
-        "负责 App 的性能优化，提升运行速度",
-        "负责 Android/iOS SDK集成，App更新，数据统计等 `React Native 原生拓展功能的开发`",
-        "负责课程表/反馈/空闲教室等功能的后端开发，并使用 `Docker` 部署",
-        "`编写100+单元测试`, 确保 App 迭代，重构，日常运行的稳定性，部分功能采取 TDD 方式开发",
-        "注重代码可维护性与健壮性，`多次重构以提高代码可维护性`"
-      ]
-    }
-  }, {
-    "title": {
-      "place": "Koa2-Easy",
-      "links": [{
-        "name": "源代码",
-        "href": "https://github.com/Lxxyx/koa2-easy"
-      }]
-    },
-    "content": {
-      "position": "Node.js",
-      "tasks": [
-        "基于 `Koa2`，从自身需求出发，加速开发",
-        "默认支持 `CORS跨域，Gzip，文件上传`等功能，",
-        "编写模板中间件 `Koa-ArtTemplate` 与脚手架，支持生成 TypeScript 模板，上手即用"
-      ]
-    }
-  }],
+  ],
   "skills": {
     "flags": {
       "name": "Web前端",
