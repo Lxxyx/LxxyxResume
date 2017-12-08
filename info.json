@@ -5,7 +5,7 @@
     "PDF会自动生成，文件名可以在 generate_pdf.js 里改",
     "PDF的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
-  "title": "刘子健 - 前端工程师（@淘宝FED-已转正）",
+  "title": "刘子健 - 前端工程师（淘宝FED-已转正）",
   "aside": [{
     "href": "https://github.com/Lxxyx/LxxyxResume",
     "content": "源代码"
