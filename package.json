@@ -5,8 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp clean && gulp",
+    "pdf": "gulp pdf",
     "dev": "gulp dev",
-    "deploy": "gulp pdf && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
+    "deploy":
+      "gulp pdf && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
   },
   "author": "Lxxyx",
   "license": "MIT",
@@ -16,7 +18,7 @@
     "gulp-connect": "^5.0.0",
     "gulp-copy": "^0.0.2",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "3.1.0",
     "jade": "^1.11.0",
     "puppeteer": "*",
     "rimraf-promise": "^2.0.0"

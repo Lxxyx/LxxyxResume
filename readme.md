@@ -21,6 +21,12 @@
 
 在 generate_pdf 与 info.json 中，替换 LxxyxResume.pdf 为你自己想要的名字
 
+生成 PDF 的命令：
+
+```bash
+npm run pdf
+```
+
 ### 运行方式：
 
 替换 info.json 的内容，运行`gulp`即可。  
