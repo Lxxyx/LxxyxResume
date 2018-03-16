@@ -6,23 +6,28 @@
     "PDF的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
   "title": "刘子健 - 前端工程师",
-  "aside": [{
-    "href": "https://github.com/Lxxyx/LxxyxResume",
-    "content": "源代码"
-  }, {
-    "href": "./pdf/LxxyxResume.pdf",
-    "content": "PDF下载"
-  }, {
-    "href": "https://segmentfault.com/u/lxxyx",
-    "content": "SF"
-  }, {
-    "href": "https://www.zhihu.com/people/lxxyx",
-    "content": "知乎"
-  }],
+  "aside": [
+    {
+      "href": "https://github.com/Lxxyx/LxxyxResume",
+      "content": "源代码"
+    },
+    {
+      "href": "./pdf/LxxyxResume.pdf",
+      "content": "PDF下载"
+    },
+    {
+      "href": "https://segmentfault.com/u/lxxyx",
+      "content": "SF"
+    },
+    {
+      "href": "https://www.zhihu.com/people/lxxyx",
+      "content": "知乎"
+    }
+  ],
   "header": {
     "title": {
       "name": "刘子健",
-      "job": "前端工程师（淘宝FED-已转正）"
+      "job": "前端工程师"
     },
     "contacts": {
       "phone": "15579185518",
@@ -52,18 +57,21 @@
     ]
   },
   "language": {
-    "cert": [{
-      "name": "CET-4",
-      "grade": 491,
-      "fullmarks": 710
-    }],
+    "cert": [
+      {
+        "name": "CET-4",
+        "grade": 491,
+        "fullmarks": 710
+      }
+    ],
     "skills": [
       "能较为流畅的阅读开发文档及其他资料",
       "可在英文字幕下观看 MOOC 课程、开发者大会视频",
       "能正常使用Google与Stack Overflow解决开发问题"
     ]
   },
-  "experience": [{
+  "experience": [
+    {
       "title": {
         "place": "淘宝前端团队",
         "time": "2017.06-2018.01"
@@ -71,10 +79,10 @@
       "content": {
         "position": " Web 前端实习生",
         "tasks": [
-          "使用 Weex/Rax 开发线上页面",
-          "使用 React 开发后台管理系统",
-          "学习性能优化相关知识",
-          "2017.09.02 `转正`"
+          "参与双十一、双十二大促活动，开发手淘“全部会场”，“会场推荐”等核心页面与模块",
+          "参与双十一、双十二大促活动，开发PC端淘宝 Sidebar 功能并上线",
+          "使用 Weex/Rax 完成手淘首页业务，学习性能优化相关知识，持续优化性能",
+          "完成手淘品牌号创新广告业务，实现视差等复杂交互效果"
         ]
       }
     },
@@ -92,7 +100,8 @@
           "制定工作室前端技术栈，代码规范及新人前端学习路线"
         ]
       }
-    }, {
+    },
+    {
       "title": {
         "place": "百度企业产品用户体验中心",
         "time": "2016.10-2017.2"
@@ -105,7 +114,8 @@
           "学习公司开发流程，制度等软知识"
         ]
       }
-    }, {
+    },
+    {
       "title": {
         "place": "北京闪银奇异",
         "time": "2016.07-2016.08"
@@ -118,14 +128,17 @@
           "`深入学习移动端 Web 开发与移动端常见调试方式`"
         ]
       }
-    }, {
+    },
+    {
       "title": {
         "place": "南大家园-iNCU",
         "time": "2017.01-至今",
-        "links": [{
-          "name": "下载链接",
-          "href": "http://incu.ncuos.com/"
-        }]
+        "links": [
+          {
+            "name": "下载链接",
+            "href": "http://incu.ncuos.com/"
+          }
+        ]
       },
       "content": {
         "position": "客户端/前端/后台",
@@ -138,13 +151,16 @@
           "注重代码可维护性与健壮性，`多次重构以提高代码可维护性`"
         ]
       }
-    }, {
+    },
+    {
       "title": {
         "place": "Koa2-Easy",
-        "links": [{
-          "name": "源代码",
-          "href": "https://github.com/Lxxyx/koa2-easy"
-        }]
+        "links": [
+          {
+            "name": "源代码",
+            "href": "https://github.com/Lxxyx/koa2-easy"
+          }
+        ]
       },
       "content": {
         "position": "Node.js",
@@ -159,69 +175,79 @@
   "skills": {
     "flags": {
       "name": "Web前端",
-      "skill": [{
-        "name": "`HTML/CSS`",
-        "description": [
-          "能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用，实现常用的布局与动画",
-          "了解 `HTML5/CSS3` ，并能熟练使用部分新特性",
-          "不借助框架，能编写`响应式/移动端网页`"
-        ]
-      }, {
-        "name": "`ECMAScript（JavaScript）`",
-        "description": [
-          "熟悉 JavaScript ，`代码编写遵守规范`",
-          "了解` JavaScript 面向对象知识`与 `MV*` 模式",
-          "学习 ECMAScript 规范，不断实践并在新项目中应用，`熟练使用 ES6/7 开发项目 `",
-          "熟悉 JavaScript 异步编程，`掌握常见的异步解决方案`"
-        ]
-      }, {
-        "name": "前端工程化实践",
-        "description": [
-          "日常使用 `TypeScript` 完成前后端项目",
-          "熟练使用 `React/Vue` ，完成单页和常见应用的编写",
-          "熟练使用 `React Native/Weex` 开发 App",
-          "熟悉 jQuery/Bootstrap 等常见框架类库的使用",
-          "熟练使用 `Gulp , Webpack , Rollup` 等代码构建工具"
-        ]
-      }]
+      "skill": [
+        {
+          "name": "`HTML/CSS`",
+          "description": [
+            "能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用，实现常用的布局与动画",
+            "了解 `HTML5/CSS3` ，并能熟练使用部分新特性",
+            "不借助框架，能编写`响应式/移动端网页`"
+          ]
+        },
+        {
+          "name": "`ECMAScript（JavaScript）`",
+          "description": [
+            "熟悉 JavaScript ，`代码编写遵守规范`",
+            "了解` JavaScript 面向对象知识`与 `MV*` 模式",
+            "学习 ECMAScript 规范，不断实践并在新项目中应用，`熟练使用 ES6/7 开发项目 `",
+            "熟悉 JavaScript 异步编程，`掌握常见的异步解决方案`"
+          ]
+        },
+        {
+          "name": "前端工程化实践",
+          "description": [
+            "日常使用 `TypeScript` 完成前后端项目",
+            "熟练使用 `React/Vue` ，完成单页和常见应用的编写",
+            "熟练使用 `React Native/Weex` 开发 App",
+            "熟悉 jQuery/Bootstrap 等常见框架类库的使用",
+            "熟练使用 `Gulp , Webpack , Rollup` 等代码构建工具"
+          ]
+        }
+      ]
     },
     "cloud": {
       "name": "Web后端",
-      "skill": [{
-        "name": "`Node.js`",
-        "description": [
-          "使用 `TypeScript + Koa2/Express` 等框架搭建后端服务",
-          "`使用 Node.js 开发命令行/爬虫程序`，并发布至 NPM ",
-          "能配合 MongoDB 完成 CRUD",
-          "使用 ` Jest/Mocha/Ava `编写单元测试 并通过 Ci 实现项目持续集成"
-        ]
-      }, {
-        "name": "其它知识",
-        "description": [
-          "熟悉` HTTP 常见知识`,对 HTTP2/WebSocket 等新知识有所了解",
-          "日常使用 `Docker` 完成项目的构建与部署",
-          "完成 `Nginx` 的配置，实现反向代理等功能"
-        ]
-      }]
+      "skill": [
+        {
+          "name": "`Node.js`",
+          "description": [
+            "使用 `TypeScript + Koa2/Express` 等框架搭建后端服务",
+            "`使用 Node.js 开发命令行/爬虫程序`，并发布至 NPM ",
+            "能配合 MongoDB 完成 CRUD",
+            "使用 ` Jest/Mocha/Ava `编写单元测试 并通过 Ci 实现项目持续集成"
+          ]
+        },
+        {
+          "name": "其它知识",
+          "description": [
+            "熟悉` HTTP 常见知识`,对 HTTP2/WebSocket 等新知识有所了解",
+            "日常使用 `Docker` 完成项目的构建与部署",
+            "完成 `Nginx` 的配置，实现反向代理等功能"
+          ]
+        }
+      ]
     },
     "gears": {
       "name": "其它",
-      "skill": [{
-        "name": "`计算机基础`",
-        "description": [
-          "计算机基础较好，`对计算机与编程有极大热情，自学能力较强`",
-          "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》等课程",
-          "自学`数据结构与算法`，用 JavaScript 实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
-          "`坚持写原创技术博客，月浏览量3k`，在 Github 有自己的开源项目"
-        ]
-      }, {
-        "name": "工具使用",
-        "description": [
-          "`一年 Linux 使用经验`，使用 MacOS 作为日常系统",
-          "熟练使用 Git 等代码管理与团队协作工具，`使用 Gitflow 开发项目`并尝试在团队内推广使用",
-          "日常使用 ` VSCode / Webstorm` 进行开发"
-        ]
-      }]
+      "skill": [
+        {
+          "name": "`计算机基础`",
+          "description": [
+            "计算机基础较好，`对计算机与编程有极大热情，自学能力较强`",
+            "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》等课程",
+            "自学`数据结构与算法`，用 JavaScript 实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
+            "`坚持写原创技术博客，月浏览量3k`，在 Github 有自己的开源项目"
+          ]
+        },
+        {
+          "name": "工具使用",
+          "description": [
+            "`一年 Linux 使用经验`，使用 MacOS 作为日常系统",
+            "熟练使用 Git 等代码管理与团队协作工具，`使用 Gitflow 开发项目`并尝试在团队内推广使用",
+            "日常使用 ` VSCode / Webstorm` 进行开发"
+          ]
+        }
+      ]
     }
   }
 }
