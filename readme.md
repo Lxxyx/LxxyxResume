@@ -9,11 +9,23 @@
 
 **Node 8.9.0 及以上**
 
-## 启动
+## 安装
 
-使用 `npm install` 安装
+1. 使用 `npm install` 安装
+2. 全局安装gulp `npm install -g gulp`
 
-**npm + 国内源** 可能会出现 chrome 安装的问题，推荐使用 `cnpm` 或者 `npm` + 原版源的方式
+### 推荐安装方式
+
+由于安装puppeteer时因为需要下载chrome的缘故总是安装失败提示:
+
+* 推荐设置代理进行Git下载
+```
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
+* 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
+
+* 或使用 `cnpm` 或者 `npm` + 原版源的方式
 
 ### 特点
 
@@ -27,7 +39,7 @@
 npm run pdf
 ```
 
-### 运行方式：
+## ：
 
 替换 info.json 的内容，运行`gulp`即可。  
 生成内容可在 dist 文件夹查看。
