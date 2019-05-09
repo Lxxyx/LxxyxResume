@@ -37,7 +37,7 @@ git config --global https.proxy 'socks5://127.0.0.1:1080'
 npm run pdf
 ```
 
-## ：
+## 启动
 
 替换 info.json 的内容，运行`gulp`即可。  
 生成内容可在 dist 文件夹查看。
