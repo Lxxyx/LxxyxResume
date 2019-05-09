@@ -14,7 +14,7 @@
 
 ### 推荐安装方式
 
-由于安装puppeteer时因为需要下载chrome的缘故总是安装失败提示:
+由于puppeteer是chromium团队所开发，故被防火墙阻拦造成安装失败，为此给出以下安装方式:
 
 * 推荐设置代理进行Git下载
 ```
@@ -24,6 +24,8 @@ git config --global https.proxy 'socks5://127.0.0.1:1080'
 * 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
 
 * 或使用 `cnpm` 或者 `npm` + 原版源的方式
+
+ps：设置代理及跳过安装chromium可同时使用
 
 ### 特点
 
