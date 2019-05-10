@@ -22,8 +22,7 @@
 git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
 ```
-* 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
-* puppeteer安装成功后再执行 npm install puppeteer --save
+* 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`，puppeteer安装成功后再执行 npm install puppeteer --save
 
 * 或使用 `cnpm` 或者 `npm` + 原版源的方式
 
