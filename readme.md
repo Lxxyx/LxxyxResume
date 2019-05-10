@@ -2,18 +2,31 @@
 
 简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/) 【原主人已删除】
 
-简历基于 Gulp+Scss+Jade。  
-访问地址：[Lxxyx 的简历](https://resume.lxxyx.cn)
+* 简历基于 Gulp+Scss+Jade。  
+* 访问地址：[Lxxyx 的简历](https://resume.lxxyx.cn)
 
-### 要求
+**要求：Node 8.9.0 及以上**
 
-**Node 8.9.0 及以上**
+## 安装
 
-## 启动
+1. 使用 `npm install` 安装
+2. 全局安装gulp `npm install -g gulp`
 
-使用 `npm install` 安装
+### 推荐安装方式
 
-**npm + 国内源** 可能会出现 chrome 安装的问题，推荐使用 `cnpm` 或者 `npm` + 原版源的方式
+由于puppeteer是chromium团队所开发，故被防火墙阻拦造成安装失败，为此给出以下安装方式:
+
+* 推荐设置代理进行Git下载
+```
+# 设置代理
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
+* 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
+
+* 或使用 `cnpm` 或者 `npm` + 原版源的方式
+
+ps：设置代理及跳过安装chromium可同时使用
 
 ### 特点
 
@@ -27,7 +40,7 @@
 npm run pdf
 ```
 
-### 运行方式：
+## 启动
 
 替换 info.json 的内容，运行`gulp`即可。  
 生成内容可在 dist 文件夹查看。
