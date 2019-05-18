@@ -12,21 +12,29 @@
 1. 使用 `npm install` 安装
 2. 全局安装gulp `npm install -g gulp`
 
-### 推荐安装方式
+#### 推荐使用 `cnpm` 或者 `npm` + 镜像源的方式
 
-由于puppeteer是chromium团队所开发，故被防火墙阻拦造成安装失败，为此给出以下安装方式:
+`npm install puppeteer-cn --save` 按此顺序执行以下指令即可
+ 1. ` npm install puppeteer --ignore-scripts`
+2. `npm install`
+3. `npm config set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD false`
+4. ` npm install puppeteer-cn --save`
 
-* 推荐设置代理进行Git下载
+#### 跳过及恢复安装
+  1. 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
+  2. 执行 `npm config set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD false` 再恢复chromium的安装
+  3. 恢复安装后，执行 `npm install puppeteer --save`
+
+ps: 此步骤涉及代理设置访问
 ```
-# 设置代理
+# 代理设置
 git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
+# 取消代理
+git config --global --unset https.proxy 'socks5://127.0.0.1:1080'
+git config --global --unset http.proxy 'socks5://127.0.0.1:1080'
 ```
-* 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`，puppeteer安装成功后再执行 npm install puppeteer --save
 
-* 或使用 `cnpm` 或者 `npm` + 原版源的方式
-
-ps：设置代理及跳过安装chromium可同时使用
 
 ### 特点
 
@@ -39,6 +47,8 @@ ps：设置代理及跳过安装chromium可同时使用
 ```bash
 npm run pdf
 ```
+
+也可使用chrome浏览器自带的打印机制作PDF，同时也解决了生成简历打印没有字体图标的问题
 
 ## 启动
 
