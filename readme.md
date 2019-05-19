@@ -52,8 +52,15 @@ npm run pdf
 
 ## 启动
 
-替换 info.json 的内容，运行`gulp`即可。  
-生成内容可在 dist 文件夹查看。
+替换 info.json 的内容，运行`gulp`即可，生成内容可在 dist 文件夹查看。如需本地部署：
+
+1. `cnpm install gulp --save-dev`
+2. `npm install gulp-webserver --save-dev`
+3. `gulp webserver`
+
+即可使用 http://localhost:9001 离线访问简历
+
+
 
 需要自动部署的，运行`gulp deploy`即可，需要在 gulpfile 中更改为你的地址（！会抹去你 github pages 内容，慎用！）
 
