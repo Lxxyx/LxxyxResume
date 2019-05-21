@@ -12,13 +12,22 @@
 1. 使用 `npm install` 安装
 2. 全局安装gulp `npm install -g gulp`
 
-#### 推荐使用 `cnpm` 或者 `npm` + 镜像源的方式
+
+#### 推荐使用淘宝chromium源安装
+
+简单方便还快速
+```
+npm config set puppeteer_download_host=https://npm.taobao.org/mirrors
+npm i puppeteer
+```
+#### 使用 `puppeteer-cn` 安装
 
 `npm install puppeteer-cn --save` 按此顺序执行以下指令即可
  1. ` npm install puppeteer --ignore-scripts`
 2. `npm install`
 3. `npm config set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD false`
 4. ` npm install puppeteer-cn --save`
+
 
 #### 跳过及恢复安装
   1. 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
@@ -54,11 +63,11 @@ npm run pdf
 
 替换 info.json 的内容，运行`gulp`即可，生成内容可在 dist 文件夹查看。如需本地部署：
 
-1. `cnpm install gulp --save-dev`
+1. `npm install gulp --save-dev`
 2. `npm install gulp-webserver --save-dev`
 3. `gulp webserver`
 
-即可使用 http://localhost:9001 离线访问简历
+即可以本地离线形式访问简历
 
 
 
