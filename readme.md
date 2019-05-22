@@ -51,9 +51,9 @@ git config --global --unset http.proxy 'socks5://127.0.0.1:1080'
 
 在 generate_pdf 与 info.json 中，替换 LxxyxResume.pdf 为你自己想要的名字,或删除该文件生成新的pdf
 
-``bash
+```bash
 gulp pdf
-``
+```
 
 <!--
 生成 PDF 的命令：
