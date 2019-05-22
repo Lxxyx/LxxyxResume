@@ -49,13 +49,19 @@ git config --global --unset http.proxy 'socks5://127.0.0.1:1080'
 
 自动生成 PDF 版简历
 
-在 generate_pdf 与 info.json 中，替换 LxxyxResume.pdf 为你自己想要的名字
+在 generate_pdf 与 info.json 中，替换 LxxyxResume.pdf 为你自己想要的名字,或删除该文件生成新的pdf
 
+``bash
+gulp pdf
+``
+
+<!--
 生成 PDF 的命令：
 
 ```bash
 npm run pdf
 ```
+-->
 
 也可使用chrome浏览器自带的打印机制作PDF，同时也解决了生成简历打印没有字体图标的问题
 
@@ -76,3 +82,5 @@ npm run pdf
 ### 自定义域名
 
 修改 CNAME 文件，替换为你的域名即可
+
+
