@@ -12,29 +12,8 @@
 1. 使用 `npm install` 安装
 2. 全局安装gulp `npm install -g gulp`
 
+ps:  由于安装puppeteer的缘故，此步骤可能涉及代理设置访问
 
-#### 推荐使用淘宝chromium源安装
-
-简单方便还快速
-```
-npm config set puppeteer_download_host=https://npm.taobao.org/mirrors
-npm i puppeteer
-```
-#### 使用 `puppeteer-cn` 安装
-
-`npm install puppeteer-cn --save` 按此顺序执行以下指令即可
- 1. ` npm install puppeteer --ignore-scripts`
-2. `npm install`
-3. `npm config set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD false`
-4. ` npm install puppeteer-cn --save`
-
-
-#### 跳过及恢复安装
-  1. 跳过安装chromium 安装步骤 `npm install puppeteer --ignore-scripts`
-  2. 执行 `npm config set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD false` 再恢复chromium的安装
-  3. 恢复安装后，执行 `npm install puppeteer --save`
-
-ps: 此步骤涉及代理设置访问
 ```
 # 代理设置
 git config --global http.proxy 'socks5://127.0.0.1:1080'
@@ -44,6 +23,13 @@ git config --global --unset https.proxy 'socks5://127.0.0.1:1080'
 git config --global --unset http.proxy 'socks5://127.0.0.1:1080'
 ```
 
+#### 推荐使用淘宝chromium源安装
+
+简单方便还快速
+```
+npm config set puppeteer_download_host=https://npm.taobao.org/mirrors
+npm i puppeteer
+```
 
 ### 特点
 
