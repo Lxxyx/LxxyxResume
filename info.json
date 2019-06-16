@@ -2,8 +2,8 @@
   "Author": "Lxxyx - Inspired by Joyee Cheung",
   "Guide": [
     "照着这里面的格式填写即可",
-    "PDF会自动生成，文件名可以在 generate_pdf.js 里改",
-    "PDF的地址，将这个文件里pdf部分改为你的PDF文件名即可"
+    "PDF 会自动生成，文件名可以在 gulp.js 里改",
+    "PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可"
   ],
   "title": "繁易 - 前端工程师",
   "aside": [
