@@ -1,5 +1,6 @@
 $black: #333;
 $white: #fff;
+
 @mixin content-after {
   float: left;
   width: 0;
@@ -56,11 +57,13 @@ dd {
   padding: 30px 45px;
   // padding: 20px 20px;
   background: $white;
+
   @include media("<=phone") {
     padding: 30px 10px;
   }
+
   @include media("print") {
-    padding: 20px 20px !important;
+    padding: 12px 12px !important;
   }
 }
 
@@ -107,6 +110,11 @@ dd {
     color: $white;
     border-radius: 5px;
     background: $black;
+
+    .skill {
+      color: #ffffff;
+      font-weight: normal;
+    }
   }
   &::after {
     @include content-after;

@@ -52,7 +52,7 @@
     "name": "南昌大学",
     "major": "人力资源管理（本科）",
     "honor": [
-      "2016.9 - 2017.6 `南昌大学家园工作室 — 前端负责人`"
+      "2016.9 - 2017.6 `家园工作室 — 前端负责人`"
     ]
   },
   "language": {
@@ -64,9 +64,7 @@
       }
     ],
     "skills": [
-      "能较为流畅的阅读开发文档及其他资料",
-      "可在英文字幕下观看 MOOC 课程、开发者大会视频",
-      "能正常使用Google与Stack Overflow解决开发问题"
+      "流畅阅读开发文档，观看开发者大会视频"
     ]
   },
   "experience": [
@@ -76,9 +74,9 @@
         "time": "2018.07-至今"
       },
       "content": {
-        "position": " 前端工程师",
+        "position": "前端工程师",
         "tasks": [
-          "业务开发 & 技术体系"
+          "负责业务与技术体系建设"
         ]
       }
     },
@@ -88,12 +86,10 @@
         "time": "2017.06-2018.01"
       },
       "content": {
-        "position": " Web 前端实习生",
+        "position": "Web 前端实习生",
         "tasks": [
-          "参与双十一、双十二大促，开发手淘“全部会场”，“会场推荐”等`核心页面与模块`",
-          "参与双十一、双十二大促，开发淘宝首页 Sidebar 功能并上线",
-          "使用 Weex/Rax 完成手淘首页业务，学习性能优化相关知识，持续优化性能",
-          "完成手淘品牌号创新广告业务，实现视差等复杂交互效果"
+          "参与双十一、双十二大促，开发`核心页面与模块`",
+          "使用 Weex/Rax 完成手淘各类业务"
         ]
       }
     },
@@ -105,10 +101,9 @@
       "content": {
         "position": "前端开发",
         "tasks": [
-          "使用 `React/Vue` , 开发单页应用",
-          "使用 `React Native` 开发 `Android/iOS App` ",
-          "负责工作室日常前端工作安排，定期开展前端分享会，解决疑难 BUG ",
-          "制定工作室前端技术栈，Git、代码规范及新人前端学习路线"
+          "页面开发 & `Android/iOS App` 开发",
+          "规定前端技术栈 & 分享会 & 新人路线设定",
+          "建立 Git 规范 & CI 体系 & 账号体系"
         ]
       }
     },
@@ -126,31 +121,10 @@
       "content": {
         "position": "客户端/前端/后台",
         "tasks": [
-          "使用 `React Native` + `TypeScript` + `Redux & Redux-saga` 完成整个App",
-          "负责 App 的性能优化，提升运行速度",
-          "负责 Android/iOS SDK集成，App更新，数据统计等 `React Native 原生拓展功能的开发`",
-          "负责课程表/反馈/空闲教室等功能的后端开发，并使用 `Docker` 部署",
-          "`编写100+单元测试`, 确保 App 迭代，重构，日常运行的稳定性，部分功能采取 TDD 方式开发",
-          "注重代码可维护性与健壮性，`多次重构以提高代码可维护性`"
-        ]
-      }
-    },
-    {
-      "title": {
-        "place": "Koa2-Easy",
-        "links": [
-          {
-            "name": "源代码",
-            "href": "https://github.com/Lxxyx/koa2-easy"
-          }
-        ]
-      },
-      "content": {
-        "position": "Node.js",
-        "tasks": [
-          "基于 `Koa2`，从自身需求出发，加速开发",
-          "默认支持 `CORS跨域，Gzip，文件上传`等功能，",
-          "编写模板中间件 `Koa-ArtTemplate` 与脚手架，支持生成 TypeScript 模板，上手即用"
+          "基于 `RN + TS + Redux + Saga/RxJS` 开发",
+          "`性能优化 & 原生拓展功能开发 & 后端开发`",
+          "`编写 100+ 单测`, 部分功能采取 TDD 方式开发",
+          "代码可维护性与健壮性好"
         ]
       }
     }
@@ -162,28 +136,22 @@
         {
           "name": "`HTML/CSS`",
           "description": [
-            "能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用，实现常用的布局与动画",
-            "了解 `HTML5/CSS3` ，能熟练使用部分新特性",
+            "能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用",
             "不借助框架，能编写`响应式/移动端网页`"
           ]
         },
         {
           "name": "`ECMAScript（JavaScript）`",
           "description": [
-            "熟悉 JavaScript ，`代码编写遵守规范`",
-            "了解` JavaScript 面向对象知识`与 `MV*` 模式",
-            "理解 ECMAScript 规范及制定过程，`熟练使用 ES6/7/Next 开发项目 `",
+            "`熟练使用 ES6/7/Next 开发项目`，代码编写遵守规范",
             "熟悉异步编程，`掌握常见的解决方案及原理`"
           ]
         },
         {
           "name": "前端工程化实践",
           "description": [
-            "日常使用 `TypeScript` 完成前后端项目",
-            "熟练使用 `React/Vue` ，完成单页和常见应用的编写",
-            "熟练使用 `React Native/Weex` 开发 App",
-            "熟悉 jQuery/Bootstrap 等常见框架类库的使用",
-            "熟练使用 `Gulp , Webpack , Rollup` 等代码构建工具"
+            "熟练使用 `TS + React/Vue/RN` ，完成各类需求",
+            "前端工程化思考多，并有实际落地方案"
           ]
         }
       ]
@@ -194,16 +162,13 @@
         {
           "name": "`Node.js`",
           "description": [
-            "使用 `TypeScript + Koa2/Express` 等框架搭建后端服务",
-            "`使用 Node.js 开发命令行/爬虫程序`，并发布至 npm",
-            "能配合 MongoDB 完成 CRUD",
-            "使用 `Jest/Mocha/Ava` 编写单元及UI测试 并通过 Ci 实现持续集成"
+            "熟练使用 `TS + Koa2 + MongoDB` 完成各类应用",
+            "使用 `Jest/Mocha` 编写单测并通过 CI 实现持续集成"
           ]
         },
         {
           "name": "其它知识",
           "description": [
-            "熟悉 `HTTP 常见知识`,对 HTTP2/WebSocket 等新知识有所了解",
             "日常使用 `Docker` 完成项目的构建与部署",
             "完成 `Nginx` 的配置，实现反向代理等功能"
           ]
@@ -216,18 +181,16 @@
         {
           "name": "`计算机基础`",
           "description": [
-            "计算机基础较好，`对计算机与编程有极大热情，自学能力较强`",
-            "在校选课与 MOOC 自学《计算机科学导论》，《计算机网络》等课程",
-            "自学`数据结构与算法`，用 JavaScript 实现并归纳总结 -- <a href=\"http://t.cn/R4Ybrs0\">总结地址</a>",
-            "`坚持写原创技术博客，月浏览量3k`，在 Github 有自己的开源项目"
+            "`对计算机与编程有极大热情，自学能力较强`",
+            "在校选课与 MOOC 自学计算机相关课程",
+            "`坚持写原创技术博客，月浏览量 3K`"
           ]
         },
         {
           "name": "工具使用",
           "description": [
-            "`两年 Linux 使用经验`，使用 macOS 作为日常系统",
-            "熟练使用 Git 等代码管理与团队协作工具，`使用 Gitflow 开发项目`并尝试在团队内推广使用",
-            "日常使用 `VSCode / Webstorm` 进行开发"
+            "`两年 Linux 使用经验`",
+            "熟练使用 Git & `GitFlow 并推广至团队`"
           ]
         }
       ]

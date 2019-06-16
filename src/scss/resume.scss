@@ -3,6 +3,7 @@
 @import "components/header.scss";
 @import "components/content.scss";
 @import "components/footer.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -17,11 +18,15 @@ h3 {
   font-size: 20px;
 }
 
-body {
+html, body {
   font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB",
     "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   background: #e0e0e0;
   -webkit-font-smoothing: antialiased;
+
+  @include media("print") {
+    background-color: #ffffff;
+  }
 }
 
 a,
@@ -38,17 +43,21 @@ strong {
   margin-right: auto;
   margin-left: auto;
   box-shadow: 2px 2px 5px;
+
   @include media(">=desktop") {
     width: 970px;
   }
+
   @include media(">=tablet", "<=desktop") {
     width: 750px;
   }
+
   @include media("<=phone") {
     margin-top: 0;
     padding: 5px 0;
     box-shadow: 0 0 0;
   }
+
   @include media("print") {
     margin-top: 0;
     box-shadow: 0 0 0;

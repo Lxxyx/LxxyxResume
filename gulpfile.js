@@ -121,7 +121,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   })
 
   await page.goto('http://localhost:9001')
-  await delay(1000)
+  await delay(100)
 
   await page.pdf({
     path: './src/pdf/LxxyxResume.pdf',
@@ -133,8 +133,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
       left: 0,
       right: 0,
       bottom: 0
-    },
-    preferCSSPageSize: true
+    }
   })
 
   console.log('PDF生成在 ./src/pdf 中了')
