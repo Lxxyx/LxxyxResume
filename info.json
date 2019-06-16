@@ -8,25 +8,25 @@
   "title": "刘子健 - 前端工程师",
   "aside": [
     {
+      "href": "https://www.zhihu.com/people/lxxyx",
+      "content": "知乎"
+    },
+    {
+      "href": "https://segmentfault.com/u/lxxyx",
+      "content": "思否"
+    },
+    {
       "href": "https://github.com/Lxxyx/LxxyxResume",
       "content": "源代码"
     },
     {
       "href": "./pdf/LxxyxResume.pdf",
-      "content": "PDF下载"
-    },
-    {
-      "href": "https://segmentfault.com/u/lxxyx",
-      "content": "SF"
-    },
-    {
-      "href": "https://www.zhihu.com/people/lxxyx",
-      "content": "知乎"
+      "content": "PDF 下载"
     }
   ],
   "header": {
     "title": {
-      "name": "刘子健",
+      "name": "繁易",
       "job": "前端工程师"
     },
     "contacts": {
@@ -43,7 +43,7 @@
       },
       "blog": {
         "href": "http://www.lxxyx.win",
-        "name": "Lxxyx的前端乐园"
+        "name": "Lxxyx 的前端乐园"
       }
     }
   },
@@ -52,7 +52,7 @@
     "name": "南昌大学",
     "major": "人力资源管理（本科）",
     "honor": [
-      "2016.9 - 2017.6 `家园工作室 — 前端负责人`"
+      "2016.09 - 2017.06 家园工作室 — `前端负责人`"
     ]
   },
   "language": {
@@ -64,14 +64,14 @@
       }
     ],
     "skills": [
-      "流畅阅读开发文档，观看开发者大会视频"
+      "流畅阅读开发文档 & 观看开发者大会视频"
     ]
   },
   "experience": [
     {
       "title": {
-        "place": "淘宝前端团队",
-        "time": "2018.07-至今"
+        "place": "淘系前端团队",
+        "time": "2018.07 - 至今"
       },
       "content": {
         "position": "前端工程师",
@@ -83,7 +83,7 @@
     {
       "title": {
         "place": "淘宝前端团队",
-        "time": "2017.06-2018.01"
+        "time": "2017.06 - 2018.01"
       },
       "content": {
         "position": "Web 前端实习生",
@@ -96,7 +96,7 @@
     {
       "title": {
         "place": "家园工作室",
-        "time": "2015.3-2017.06"
+        "time": "2015.03 - 2017.06"
       },
       "content": {
         "position": "前端开发",
@@ -110,7 +110,7 @@
     {
       "title": {
         "place": "南大家园-iNCU",
-        "time": "2017.01-至今",
+        "time": "2017.01 - 2019.03",
         "links": [
           {
             "name": "下载链接",
