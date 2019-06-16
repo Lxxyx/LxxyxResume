@@ -7,7 +7,7 @@ const rimrafPromise = require('rimraf-promise')
 const ghPages = require('gulp-gh-pages')
 const fs = require('fs')
 const connect = require('gulp-connect')
-const generatePdf = require('./generate_pdf')
+const puppeteer = require('puppeteer')
 
 gulp.task('resume-sass', () => {
   gulp
@@ -83,7 +83,7 @@ gulp.task('clean', () => {
   rimrafPromise('./dist/')
 })
 
-gulp.task('deploy', () =>
+gulp.task('deploy', ['pdf'], () =>
   gulp.src('./dist/**/*').pipe(
     ghPages({
       remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
@@ -112,7 +112,38 @@ gulp.task('dev', ['default', 'json2jade:watch', 'sass:watch', 'webserver'])
 gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
 
 gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
-  await generatePdf('http://localhost:9001')
+  const browser = await puppeteer.launch({ headless: true })
+  const page = await browser.newPage()
+
+  await page.setViewport({
+    width: 1440,
+    height: 900
+  })
+
+  await page.goto('http://localhost:9001')
+  await delay(1000)
+
+  await page.pdf({
+    path: './src/pdf/LxxyxResume.pdf',
+    format: 'A4',
+    printBackground: true,
+    displayHeaderFooter: false,
+    margin: {
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0
+    },
+    preferCSSPageSize: true
+  })
+
+  console.log('PDF生成在 ./src/pdf 中了')
+  browser.close()
+
   connect.serverClose()
   process.exit(0)
 })
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
