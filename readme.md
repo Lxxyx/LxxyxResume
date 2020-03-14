@@ -1,7 +1,5 @@
 # Introduction
 
-简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/) 【原主人已删除】
-
 - 简历基于 Gulp+Scss+Jade。
 - 访问地址：[Lxxyx 的简历](https://resume.lxxyx.cn)
 
@@ -48,7 +46,7 @@ gulp pdf
 npm run pdf
 ```
 
-也可使用 chrome 浏览器自带的打印机制作 PDF，同时也解决了生成简历打印没有字体图标的问题
+也可使用 Chrome 浏览器自带的打印机制作 PDF
 
 ## 启动
 
@@ -60,8 +58,12 @@ npm run pdf
 
 即可以本地离线形式访问简历
 
-需要自动部署的，运行`gulp deploy`即可，需要在 gulpfile 中更改为你的地址（！会抹去你 github pages 内容，慎用！）
+需要自动部署的，运行`gulp deploy`即可，需要在 gulpfile 中更改为你的地址（！会抹去你 github pages 内容，请确认后使用！）
 
 ### 自定义域名
 
 修改 CNAME 文件，替换为你的域名即可
+
+## 感谢
+
+简历为仿写，原简历页面地址: [张秋怡 - 个人简历](https://joyeecheung.github.io/resume/) 【原主人已删除】
