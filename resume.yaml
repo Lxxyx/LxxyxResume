@@ -41,19 +41,19 @@ language:
     - 流畅阅读开发文档 & 无障碍观看开发者大会视频
 experience:
   - title:
-      place: 淘系前端团队 - Node.js 架构组
+      place: 淘系前端团队
       time: 2019.07 - 至今
     content:
       position: 高级前端工程师
       tasks:
-        - 团队零食工
+        - Node.js 架构组 - 团队零食工
   - title:
-      place: 淘宝前端团队 - 创新业务组
+      place: 淘宝前端团队
       time: 2018.07 - 2019.06
     content:
       position: 前端工程师
       tasks:
-        - 团建负责人
+        - 创新业务组 - 团建负责人
   - title:
       place: 家园工作室
       time: 2015.03 - 2017.06
@@ -86,7 +86,7 @@ skills:
           - 不借助框架，能编写`响应式/移动端网页`
       - name: '`ECMAScript`'
         description:
-          - '`熟练使用 ES6/7/Next 开发项目`，代码编写遵守规范'
+          - '`熟练使用 ESNext 开发项目`，代码编写遵守规范'
           - 熟悉异步编程，`掌握常见的解决方案及原理`
       - name: 前端工程化实践
         description:
@@ -100,7 +100,6 @@ skills:
         description:
           - 熟练使用 `TS + Koa2 + MongoDB` 完成各类应用
           - 熟悉 Express/Koa/Egg/Midway 框架底层原理
-          - 使用 `Jest/Mocha` 编写单测并通过 CI 实现持续集成
       - name: 其它知识
         description:
           - 日常使用 `Docker` 完成项目的构建与部署
