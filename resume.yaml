@@ -1,0 +1,122 @@
+Author: Lxxyx
+Guide:
+  - 照着这里面的格式填写即可
+  - PDF 会自动生成，文件名可以在 gulp.js 里改
+  - PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可
+title: 繁易 - 高级前端工程师
+aside:
+  - href: https://www.zhihu.com/people/lxxyx
+    content: 知乎
+  - href: https://segmentfault.com/u/lxxyx
+    content: 思否
+  - href: https://github.com/Lxxyx/LxxyxResume
+    content: 源代码
+  - href: ./pdf/LxxyxResume.pdf
+    content: PDF 下载
+header:
+  title:
+    name: 繁易
+    job: 高级前端工程师
+  contacts:
+    phone: 15579185518
+    mail: Lxxyxzj@gmail.com
+    wechat: Greboxer
+    weibo:
+      href: http://weibo.com/u/2239592792
+      name: 刘子健_且行且歌
+    github:
+      href: https://github.com/Lxxyx
+      name: Lxxyx
+    blog:
+      href: http://www.lxxyx.win
+      name: Lxxyx 的前端乐园
+education:
+  time: 2014-2018
+  name: 南昌大学
+  major: 人力资源管理（本科）
+  honor:
+    - 2016.09-2017.06 家园工作室 — `前端负责人`
+    - '`2019.03 淘系前端团队 - 最佳新人`'
+language:
+  cert:
+    - name: CET-4
+      grade: 491
+      fullmarks: 710
+  skills:
+    - 流畅阅读开发文档 & 无障碍观看开发者大会视频
+experience:
+  - title:
+      place: 淘系前端团队 - Node.js 架构组
+      time: 2019.07 - 至今
+    content:
+      position: 高级前端工程师
+      tasks:
+        - 团队零食工
+  - title:
+      place: 淘宝前端团队 - 创新业务组
+      time: 2018.07 - 2019.06
+    content:
+      position: 前端工程师
+      tasks:
+        - 团建负责人
+  - title:
+      place: 家园工作室
+      time: 2015.03 - 2017.06
+    content:
+      position: 前端负责人
+      tasks:
+        - 页面开发 & `Android/iOS App` 开发
+        - 制订前端技术栈 & 分享会 & 新人路线设定
+        - 建立 Git 规范 & CI 体系 & 账号体系
+  - title:
+      place: 南大家园-iNCU
+      time: 2017.01 - 2019.03
+      links:
+        - name: 下载链接
+          href: http://incu.ncuos.com/
+    content:
+      position: 客户端/前端/后台
+      tasks:
+        - 基于 `RN + TS + Redux + Saga/RxJS` 开发
+        - '`性能优化 & 原生拓展功能开发 & 后端开发`'
+        - '`编写 100+ 单测`, 部分功能采取 TDD 方式开发'
+        - 注重代码可维护性与健壮性
+skills:
+  flags:
+    name: Web前端
+    skill:
+      - name: '`HTML/CSS`'
+        description:
+          - 能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用
+          - 不借助框架，能编写`响应式/移动端网页`
+      - name: '`ECMAScript`'
+        description:
+          - '`熟练使用 ES6/7/Next 开发项目`，代码编写遵守规范'
+          - 熟悉异步编程，`掌握常见的解决方案及原理`
+      - name: 前端工程化实践
+        description:
+          - 熟练使用 `TS + React/Vue/RN` ，完成各类需求
+          - 前端工程化思考多，并有实际落地方案
+  cloud:
+    name: Web后端
+    skill:
+      - name: '`Node.js`'
+        description:
+          - 熟练使用 `TS + Koa2 + MongoDB` 完成各类应用
+          - 使用 `Jest/Mocha` 编写单测并通过 CI 实现持续集成
+      - name: 其它知识
+        description:
+          - 日常使用 `Docker` 完成项目的构建与部署
+          - 完成 `Nginx` 的配置，实现反向代理等功能
+  gears:
+    name: 其它
+    skill:
+      - name: '`计算机基础`'
+        description:
+          - '`对计算机与编程有极大热情，自学能力较强`'
+          - 在校选课与 MOOC 自学计算机相关课程
+          - '`坚持写原创技术博客，月浏览量 3K`'
+      - name: 工具使用
+        description:
+          - '`两年 Linux 使用经验`'
+          - 熟练使用 Git & `GitFlow 并推广至团队`

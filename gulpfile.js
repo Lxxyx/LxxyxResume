@@ -8,6 +8,7 @@ const ghPages = require('gulp-gh-pages')
 const fs = require('fs')
 const connect = require('gulp-connect')
 const puppeteer = require('puppeteer')
+const yaml = require('js-yaml')
 
 gulp.task('resume-sass', () => {
   gulp
@@ -16,7 +17,7 @@ gulp.task('resume-sass', () => {
     .pipe(
       autoprefixer({
         browsers: ['last 4 versions'],
-        cascade: false
+        cascade: false,
       })
     )
     .pipe(gulp.dest('dist/css/'))
@@ -30,7 +31,7 @@ gulp.task('icon-sass', () => {
     .pipe(
       autoprefixer({
         browsers: ['last 4 versions'],
-        cascade: false
+        cascade: false,
       })
     )
     .pipe(gulp.dest('dist/iconfont/'))
@@ -43,22 +44,22 @@ gulp.task('sass:watch', () => {
   gulp.watch('./src/scss/components/*.scss', ['resume-sass'])
 })
 
-gulp.task('json2jade', () => {
-  const info = JSON.parse(fs.readFileSync('./info.json', 'utf-8'))
-  const locals = highlight(info)
+gulp.task('yaml2jade', () => {
+  const resume = yaml.safeLoad(fs.readFileSync('./resume.yaml', 'utf-8'))
+  const locals = highlight(resume)
   gulp
     .src('./src/jade/index.jade')
     .pipe(
       jade({
-        locals
+        locals,
       })
     )
     .pipe(gulp.dest('./dist/'))
     .pipe(connect.reload())
 })
 
-gulp.task('json2jade:watch', () => {
-  gulp.watch('./info.json', ['json2jade'])
+gulp.task('yaml2jade:watch', () => {
+  gulp.watch('./resume.yaml', ['yaml2jade'])
 })
 
 function src2dist(dir) {
@@ -87,7 +88,7 @@ gulp.task('deploy', () =>
   gulp.src('./dist/**/*').pipe(
     ghPages({
       remoteUrl: 'git@github.com:Lxxyx/lxxyx.github.io.git',
-      branch: 'master'
+      branch: 'master',
     })
   )
 )
@@ -103,13 +104,13 @@ gulp.task('webserver', () => {
   connect.server({
     root: './dist',
     livereload: true,
-    port
+    port,
   })
 })
 
-gulp.task('dev', ['default', 'json2jade:watch', 'sass:watch', 'webserver'])
+gulp.task('dev', ['default', 'yaml2jade:watch', 'sass:watch', 'webserver'])
 
-gulp.task('default', ['icon-sass', 'resume-sass', 'json2jade', 'copy'])
+gulp.task('default', ['icon-sass', 'resume-sass', 'yaml2jade', 'copy'])
 
 gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   const browser = await puppeteer.launch({ headless: true })
@@ -117,7 +118,7 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
 
   await page.setViewport({
     width: 1440,
-    height: 900
+    height: 900,
   })
 
   await page.goto('http://localhost:9001')
@@ -132,8 +133,8 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
       top: 0,
       left: 0,
       right: 0,
-      bottom: 0
-    }
+      bottom: 0,
+    },
   })
 
   console.log('PDF生成在 ./src/pdf 中了')
@@ -144,5 +145,5 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
 })
 
 function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
