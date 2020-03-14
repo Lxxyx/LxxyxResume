@@ -5,8 +5,6 @@ Guide:
   - PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可
 title: 繁易 - 高级前端工程师
 aside:
-  - href: https://www.zhihu.com/people/lxxyx
-    content: 知乎
   - href: https://segmentfault.com/u/lxxyx
     content: 思否
   - href: https://github.com/Lxxyx/LxxyxResume
@@ -21,9 +19,6 @@ header:
     phone: 15579185518
     mail: Lxxyxzj@gmail.com
     wechat: Greboxer
-    weibo:
-      href: http://weibo.com/u/2239592792
-      name: 刘子健_且行且歌
     github:
       href: https://github.com/Lxxyx
       name: Lxxyx
@@ -67,7 +62,7 @@ experience:
       tasks:
         - 页面开发 & `Android/iOS App` 开发
         - 制订前端技术栈 & 分享会 & 新人路线设定
-        - 建立 Git 规范 & CI 体系 & 账号体系
+        - 建立代码/ Git 规范 & Ci 体系 & 内部认证体系
   - title:
       place: 南大家园-iNCU
       time: 2017.01 - 2019.03
@@ -80,14 +75,14 @@ experience:
         - 基于 `RN + TS + Redux + Saga/RxJS` 开发
         - '`性能优化 & 原生拓展功能开发 & 后端开发`'
         - '`编写 100+ 单测`, 部分功能采取 TDD 方式开发'
-        - 注重代码可维护性与健壮性
+        - 代码架构优秀，可维护性/健壮性/拓展性好
 skills:
   flags:
-    name: Web前端
+    name: Web 前端
     skill:
-      - name: '`HTML/CSS`'
+      - name: 'HTML/CSS'
         description:
-          - 能够编写语义化的 `HTML` ，熟悉 `CSS` 的使用
+          - 能够编写语义化的 HTML，熟悉 CSS 的使用
           - 不借助框架，能编写`响应式/移动端网页`
       - name: '`ECMAScript`'
         description:
@@ -95,10 +90,11 @@ skills:
           - 熟悉异步编程，`掌握常见的解决方案及原理`
       - name: 前端工程化实践
         description:
-          - 熟练使用 `TS + React/Vue/RN` ，完成各类需求
+          - 熟练使用 TypeScript 完成工作
+          - 熟悉 `React/Vue/RN` 等框架底层原理，
           - 前端工程化思考多，并有实际落地方案
   cloud:
-    name: Web后端
+    name: Web 后端
     skill:
       - name: '`Node.js`'
         description:
