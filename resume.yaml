@@ -30,8 +30,8 @@ education:
   name: 南昌大学
   major: 人力资源管理（本科）
   honor:
-    - 2016.09-2017.06 家园工作室 — `前端负责人`
     - '`2019.03 淘系前端团队 - 最佳新人`'
+    - 2016.09-2017.06 家园工作室 — `前端负责人`
 language:
   cert:
     - name: CET-4
@@ -90,8 +90,8 @@ skills:
           - 熟悉异步编程，`掌握常见的解决方案及原理`
       - name: 前端工程化实践
         description:
-          - 熟练使用 TypeScript 完成工作
-          - 熟悉 `React/Vue/RN` 等框架底层原理，
+          - 熟练使用 TypeScript
+          - 熟悉 `React/Vue/RN` 框架底层原理
           - 前端工程化思考多，并有实际落地方案
   cloud:
     name: Web 后端
@@ -99,6 +99,7 @@ skills:
       - name: '`Node.js`'
         description:
           - 熟练使用 `TS + Koa2 + MongoDB` 完成各类应用
+          - 熟悉 Express/Koa/Egg/Midway 框架底层原理
           - 使用 `Jest/Mocha` 编写单测并通过 CI 实现持续集成
       - name: 其它知识
         description:
