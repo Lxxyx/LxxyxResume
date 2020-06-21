@@ -7,14 +7,14 @@
     "start": "gulp clean && gulp dev",
     "pdf": "gulp pdf",
     "dev": "gulp dev",
+    "build": "gulp",
+    "now": "gulp pdf && gulp && now",
     "deploy": "gulp pdf && gulp deploy && git add -A && git commit -m 'update resume' && git push origin master"
-  },
-  "engines": {
-    "node": ">=8.9.0"
   },
   "author": "Lxxyx",
   "license": "MIT",
   "dependencies": {
+    "chrome-aws-lambda": "^3.0.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "^5.0.0",
@@ -24,11 +24,15 @@
     "jade": "^1.11.0",
     "js-yaml": "^3.13.1",
     "puppeteer": "*",
+    "puppeteer-core": "^3.0.4",
     "rimraf-promise": "^2.0.0"
   },
   "devDependencies": {
     "@types/puppeteer": "^1.12.4",
     "gulp-clean": "^0.3.2",
     "gulp-gh-pages": "^0.5.4"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
 }

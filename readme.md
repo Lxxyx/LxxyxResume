@@ -34,7 +34,7 @@ npm i puppeteer
 
 自动生成 PDF 版简历
 
-在 gulp.js 与 resume.yaml 中，替换 LxxyxResume.pdf 为你自己想要的名字, 在 src 源中生成新的 pdf
+在 gulp.js 与 resume.yaml 中，替换 resume.pdf 为你自己想要的名字, 在 src 源中生成新的 pdf
 
 ```bash
 gulp pdf

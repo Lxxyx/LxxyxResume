@@ -70,3 +70,5 @@ dist
 .vscode
 .vscode/
 .vscode/*
+.now
+public
