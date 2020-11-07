@@ -3,7 +3,9 @@ Guide:
   - 照着这里面的格式填写即可
   - PDF 会自动生成，文件名可以在 gulp.js 里改
   - PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可
+
 title: 繁易 - 高级前端工程师
+
 aside:
   - href: https://segmentfault.com/u/lxxyx
     content: 思否
@@ -11,6 +13,7 @@ aside:
     content: 源代码
   - href: ./pdf/resume.pdf
     content: PDF 下载
+
 header:
   title:
     name: 繁易
@@ -25,13 +28,17 @@ header:
     blog:
       href: http://blog.lxxyx.cn
       name: 繁易の前端乐园
+
 education:
   time: 2014-2018
   name: 南昌大学
   major: 人力资源管理（本科）
   honor:
-    - '`2019.03 淘系前端团队 - 最佳新人`'
-    - 2016.09-2017.06 家园工作室 — `前端负责人`
+    - '`20.10 淘系前端架构组 - 创意奖`'
+    - '`19.05 淘系技术部 - 最佳新人提名奖`'
+    - '`19.03 淘系前端团队 - 最佳新人奖`'
+    - 16.09-17.06 家园工作室 — `前端负责人`
+
 language:
   cert:
     - name: CET-4
@@ -39,6 +46,7 @@ language:
       fullmarks: 710
   skills:
     - 流畅阅读开发文档 & 无障碍观看开发者大会视频
+
 experience:
   - title:
       place: 淘系前端团队
@@ -46,15 +54,15 @@ experience:
     content:
       position: 高级前端工程师
       tasks:
-        - 前端架构组（20.06 - 至今） - 打杂设计师
-        - Node.js 架构组（19.07 - 2020.05） - 架构实验田
+        - 前端架构组（20.06 - 至今） - 云端一体负责人
+        - Node.js 架构组（19.07 - 20.05） - 研发模式升级业务负责人
   - title:
       place: 淘宝前端团队
       time: 2018.07 - 2019.06
     content:
       position: 前端工程师
       tasks:
-        - 创新业务组 - 团建负责人
+        - 创新业务组 - 天猫无人店 & 哇哦视频
   - title:
       place: 家园工作室
       time: 2015.03 - 2017.06
@@ -63,13 +71,13 @@ experience:
       tasks:
         - 页面开发 & Android/iOS App 开发
         - 制订前端技术栈 & 分享会 & 新人路线设定
-        - 建立代码/ Git 规范 & Ci 体系 & 内部认证体系
+        - 建立代码 / Git 规范 & Ci 体系 & 内部认证体系
   - title:
       place: 南大家园-iNCU
       time: 2017.01 - 2019.03
       links:
         - name: 下载链接
-          href: http://incu.ncuos.com/
+          href: https://incu.ncuos.com/
     content:
       position: 客户端/前端/后台
       tasks:
@@ -77,6 +85,7 @@ experience:
         - '`性能优化 & 原生拓展功能开发 & 后端开发`'
         - '`编写 100+ 单测`, 部分功能采取 TDD 方式开发'
         - 代码架构优秀，可维护性/健壮性/拓展性好
+
 skills:
   flags:
     name: Web 前端
@@ -91,20 +100,17 @@ skills:
           - 熟悉异步编程，`掌握常见的解决方案及原理`
       - name: 前端工程化实践
         description:
-          - 熟练使用 TypeScript
+          - 熟练使用 TypeScript，基于内部 Api 开发 AST 转换插件
+          - 深度理解前端工程化，在内部有规模化落地实践
           - 熟悉 `React/Vue/RN` 框架底层原理
-          - 前端工程化思考多，并有实际落地方案
+
   cloud:
     name: Web 后端
     skill:
-      - name: '`Node.js`'
+      - name: '`Node.js & Serverless`'
         description:
-          - 熟练使用 `TS + Koa2 + MongoDB` 完成各类应用
+          - 自研云端一体解决方案：Midway Hooks
           - 熟悉 Express/Koa/Egg/Midway 框架底层原理
-      - name: 其它知识
-        description:
-          - 日常使用 `Docker` 完成项目的构建与部署
-          - 完成 `Nginx` 的配置，实现反向代理等功能
   gears:
     name: 其它
     skill:
