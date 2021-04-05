@@ -14,7 +14,7 @@
   "author": "Lxxyx",
   "license": "MIT",
   "dependencies": {
-    "chrome-aws-lambda": "^3.0.4",
+    "chrome-aws-lambda": "^3.1.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "^5.0.0",
@@ -22,13 +22,13 @@
     "gulp-jade": "^1.1.0",
     "gulp-sass": "3.1.0",
     "jade": "^1.11.0",
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^3.14.1",
     "puppeteer": "*",
-    "puppeteer-core": "^3.0.4",
+    "puppeteer-core": "^3.3.0",
     "rimraf-promise": "^2.0.0"
   },
   "devDependencies": {
-    "@types/puppeteer": "^1.12.4",
+    "@types/puppeteer": "^1.20.7",
     "gulp-clean": "^0.3.2",
     "gulp-gh-pages": "^0.5.4"
   },
