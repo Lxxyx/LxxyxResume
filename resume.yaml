@@ -4,7 +4,7 @@ Guide:
   - PDF 会自动生成，文件名可以在 gulp.js 里改
   - PDF 的地址，将这个文件里pdf部分改为你的PDF文件名即可
 
-title: 繁易 - 高级前端工程师
+title: 繁易 - 前端技术专家
 
 aside:
   - href: https://segmentfault.com/u/lxxyx
@@ -17,7 +17,7 @@ aside:
 header:
   title:
     name: 繁易
-    job: 高级前端工程师
+    job: 前端技术专家
   contacts:
     phone: 15579185518
     mail: Lxxyxzj@gmail.com
@@ -49,6 +49,13 @@ language:
 
 experience:
   - title:
+      place: 淘系前端团队
+      time: 2021.08 - 至今
+    content:
+      position: 前端技术专家
+      tasks:
+        - 渐进式的 Web 框架：Midway.js
+  - title:
       place: Node.js
       time: 2020.11 - 至今
     content:
@@ -57,7 +64,7 @@ experience:
         - 维护 Node.js 项目 & Review PR & 开发新功能
   - title:
       place: 淘系前端团队
-      time: 2019.07 - 至今
+      time: 2019.07 - 2021.07
     content:
       position: 高级前端工程师
       tasks:
