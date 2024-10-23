@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
-const jade = require('gulp-jade')
+const svelte = require('gulp-svelte')
 const copy = require('gulp-copy')
 const rimrafPromise = require('rimraf-promise')
 const ghPages = require('gulp-gh-pages')
@@ -45,13 +45,13 @@ gulp.task('sass:watch', () => {
   gulp.watch('./src/scss/components/*.scss', ['resume-sass'])
 })
 
-gulp.task('yaml2jade', () => {
+gulp.task('yaml2svelte', () => {
   const resume = yaml.safeLoad(fs.readFileSync('./resume.yaml', 'utf-8'))
   const locals = highlight(resume)
   gulp
-    .src('./src/jade/index.jade')
+    .src('./src/svelte/index.svelte')
     .pipe(
-      jade({
+      svelte({
         locals,
       })
     )
@@ -59,8 +59,8 @@ gulp.task('yaml2jade', () => {
     .pipe(connect.reload())
 })
 
-gulp.task('yaml2jade:watch', () => {
-  gulp.watch('./resume.yaml', ['yaml2jade'])
+gulp.task('yaml2svelte:watch', () => {
+  gulp.watch('./resume.yaml', ['yaml2svelte'])
 })
 
 function src2dist(dir) {
@@ -109,9 +109,9 @@ gulp.task('webserver', () => {
   })
 })
 
-gulp.task('dev', ['default', 'yaml2jade:watch', 'sass:watch', 'webserver'])
+gulp.task('dev', ['default', 'yaml2svelte:watch', 'sass:watch', 'webserver'])
 
-gulp.task('default', ['icon-sass', 'resume-sass', 'yaml2jade', 'copy'])
+gulp.task('default', ['icon-sass', 'resume-sass', 'yaml2svelte', 'copy'])
 
 gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
   const fonts = fs.readdirSync('./fonts')
