@@ -34,5 +34,8 @@
   },
   "resolutions": {
     "graceful-fs": "4.2.3"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
