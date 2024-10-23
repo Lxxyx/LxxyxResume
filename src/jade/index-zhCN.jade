@@ -1,0 +1,128 @@
+extends layout
+
+block header
+  header
+    figure.qrcode
+      img(src='./img/wechat.jpg')
+    section.title
+      h1= header.title.name
+      h2= header.title.job
+    address
+      ul.contacts
+        li.icon-phone
+          a= header.contacts.phone
+        li.icon-mail
+          a(href="mailto:"+header.contacts.mail)= header.contacts.mail
+        li.icon-wechat.wechat= header.contacts.wechat
+        if header.contacts.weibo
+          li.icon-weibo
+            a(href=header.contacts.weibo.href)= header.contacts.weibo.name
+        if header.contacts.github
+          li.icon-github
+            a(href=header.contacts.github.href)= header.contacts.github.name
+        if header.contacts.blog
+          li.icon-blog
+            a(href=header.contacts.blog.href)= header.contacts.blog.name
+
+
+block education
+  section.education
+    .sec-title-wrapper.icon-book
+      h3.sec-title
+        span.sec-zh
+          | 教育经历
+        span.sec-en
+          | Education
+    .timeline-wrapper
+      ul.sec-content.timeline
+        li.timeline-item.icon-flags
+          h3.timeline-title
+            time.education-time= education.time
+          dl.education-content
+            dt.education-name= education.name
+            dd.education-major.icon-hat= education.major
+            each val in education.honor
+              dd.education-honor.icon-trophy!= val
+
+
+block language              
+  section.language
+    .sec-title-wrapper.icon-chat
+      h3.sec-title
+        span.sec-zh
+          | 语言水平
+        span.sec-en
+          | Language
+    .sec-content
+      dl.language-certificates
+        each val in language.cert
+          .language-cert-wrapper
+            dt.language-cert-type= val.name
+            dd.progress
+              .progress-bar(style= 'width:'+val.grade/val.fullmarks*100+'%')
+                span.progress-label= val.grade
+      ul.language-skills
+        each val in language.skills
+          li.icon-star= val
+
+block experience   
+  section.experience
+    .sec-title-wrapper.icon-rocket
+      h3.sec-title
+        span.sec-zh
+          | 项目与工作经验
+        span.sec-en
+          | Experience
+    .timeline-wrapper
+      ul.sec-content.timeline
+        each val in experience
+          li.timeline-item.icon-bag
+            h3.timeline-title
+              span.experience-place= val.title.place
+              if val.title.time
+                time.experience-time= val.title.time
+              else if val.title.links
+                each link in val.title.links
+                  a.experience-link(href=link.href target="_blank")= link.name
+            dl.experience-content
+              dt.experience-position= val.content.position
+              each task in val.content.tasks
+                dd.experience-task.icon-gear!= task
+
+
+block skills
+  section.skills
+    .sec-title-wrapper.icon-wrench
+      h3.sec-title
+        span.sec-zh
+          | 技能
+        span.sec-en
+          | Skills
+    .timeline-wrapper
+      ul.sec-content.timeline
+        li.timeline-item.icon-flags
+          h3.timeline-title
+            span.skill= skills.flags.name
+          each skill in skills.flags.skill
+            dl.skill-content
+              dt.skill-name!= skill.name
+              each description in skill.description
+                dd.skill-description.icon-star!= description
+        if skills.cloud
+          li.timeline-item.icon-cloud
+            h3.timeline-title
+              span.skill= skills.cloud.name
+            each skill in skills.cloud.skill
+              dl.skill-content
+                dt.skill-name!= skill.name
+                each description in skill.description
+                  dd.skill-description.icon-star!= description
+        if skills.gears
+          li.timeline-item.icon-gears
+            h3.timeline-title
+              span.skill= skills.gears.name
+            each skill in skills.gears.skill
+              dl.skill-content
+                dt.skill-name!= skill.name
+                each description in skill.description
+                  dd.skill-description.icon-star!= description

@@ -46,13 +46,24 @@ gulp.task('sass:watch', () => {
 })
 
 gulp.task('yaml2jade', () => {
-  const resume = yaml.safeLoad(fs.readFileSync('./resume.yaml', 'utf-8'))
-  const locals = highlight(resume)
+  const resumeZhCN = yaml.safeLoad(fs.readFileSync('./resume-zhCN.yaml', 'utf-8'))
+  const resumeEN = yaml.safeLoad(fs.readFileSync('./resume-EN.yaml', 'utf-8'))
+  const localsZhCN = highlight(resumeZhCN)
+  const localsEN = highlight(resumeEN)
   gulp
-    .src('./src/jade/index.jade')
+    .src('./src/jade/index-zhCN.jade')
     .pipe(
       jade({
-        locals,
+        locals: localsZhCN,
+      })
+    )
+    .pipe(gulp.dest('./public/'))
+    .pipe(connect.reload())
+  gulp
+    .src('./src/jade/index-EN.jade')
+    .pipe(
+      jade({
+        locals: localsEN,
       })
     )
     .pipe(gulp.dest('./public/'))
@@ -60,7 +71,8 @@ gulp.task('yaml2jade', () => {
 })
 
 gulp.task('yaml2jade:watch', () => {
-  gulp.watch('./resume.yaml', ['yaml2jade'])
+  gulp.watch('./resume-zhCN.yaml', ['yaml2jade'])
+  gulp.watch('./resume-EN.yaml', ['yaml2jade'])
 })
 
 function src2dist(dir) {
@@ -132,11 +144,27 @@ gulp.task('pdf', ['set-pdf-port', 'default', 'webserver'], async () => {
     height: 900,
   })
 
-  await page.goto('http://localhost:9001')
+  await page.goto('http://localhost:9001/index-zhCN.html')
   await delay(100)
 
   await page.pdf({
-    path: './src/pdf/resume.pdf',
+    path: './src/pdf/resume-zhCN.pdf',
+    format: 'A4',
+    printBackground: true,
+    displayHeaderFooter: false,
+    margin: {
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+    },
+  })
+
+  await page.goto('http://localhost:9001/index-EN.html')
+  await delay(100)
+
+  await page.pdf({
+    path: './src/pdf/resume-EN.pdf',
     format: 'A4',
     printBackground: true,
     displayHeaderFooter: false,

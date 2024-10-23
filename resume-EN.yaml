@@ -1,0 +1,115 @@
+Author: Lxxyx
+Guide:
+  - Follow the format in this file
+  - PDF will be generated automatically, you can change the file name in gulp.js
+  - For the PDF address, change the pdf section in this file to your PDF file name
+
+title: Lxxyx - Frontend Technical Expert
+
+aside:
+  - href: https://segmentfault.com/u/lxxyx
+    content: SegmentFault
+  - href: https://github.com/Lxxyx/LxxyxResume
+    content: Source Code
+  - href: ./pdf/resume.pdf
+    content: PDF Download
+
+header:
+  title:
+    name: Lxxyx
+    job: Frontend Technical Expert
+  contacts:
+    phone: 15579185518
+    mail: Lxxyxzj@gmail.com
+    wechat: fanyi997
+    github:
+      href: https://github.com/Lxxyx
+      name: Lxxyx
+    blog:
+      href: http://blog.lxxyx.cn
+      name: Lxxyx's Frontend Paradise
+
+education:
+  time: 2014-2018
+  name: Nanchang University
+  major: Human Resource Management (Bachelor)
+  honor:
+    - '20.10 Taobao Frontend Architecture Group - `Creative Award`'
+    - '19.05 Taobao Technology Department - `Best Newcomer Award`'
+    - 16.09-17.06 Home Studio — `Frontend Leader`
+
+language:
+  cert:
+    - name: CET-4
+      grade: 491
+      fullmarks: 710
+  skills:
+    - Good English reading and writing skills
+    - Can communicate in English
+
+experience:
+  - title:
+      place: Taobao Frontend Team
+      time: 2021.08 - Present
+    content:
+      position: Frontend Technical Expert
+      tasks:
+        - Progressive Web Framework: Midway.js
+  - title:
+      place: Node.js
+      time: 2020.11 - Present
+    content:
+      position: Core Collaborator
+      tasks:
+        - Maintain Node.js project & Review PR & Develop new features
+  - title:
+      place: Taobao Frontend Team
+      time: 2019.07 - 2021.07
+    content:
+      position: Senior Frontend Engineer
+      tasks:
+        - Develop Serverless Full-Stack Framework - Midway Hooks
+  - title:
+      place: Taobao Frontend Team
+      time: 2018.07 - 2019.06
+    content:
+      position: Frontend Engineer
+      tasks:
+        - Undertake cross-end projects, performance optimization, improve second opening rate from 34% to 95%
+
+skills:
+  flags:
+    name: Web Frontend
+    skill:
+      - name: 'HTML/CSS'
+        description:
+          - Can write semantic HTML, familiar with CSS usage
+          - Can write `responsive/mobile web pages` without using frameworks
+      - name: '`ECMAScript`'
+        description:
+          - '`Proficient in using ESNext to develop projects`, code follows standards'
+          - Familiar with asynchronous programming, `understand common solutions and principles`
+      - name: Frontend Engineering Practice
+        description:
+          - Proficient in `TypeScript & Compiler & AST`
+          - Deep understanding of frontend engineering, with large-scale practice within the company
+          - Familiar with `React/Vue/RN` framework principles
+
+  cloud:
+    name: Web Backend
+    skill:
+      - name: '`Node.js & Serverless`'
+        description:
+          - Node.js Core Collaborator
+          - Developed full-stack solution: Midway Hooks
+          - Familiar with Express/Koa/Egg/Midway framework principles
+  gears:
+    name: Others
+    skill:
+      - name: '`Computer Basics`'
+        description:
+          - '`Great passion for computers and programming, strong self-learning ability`'
+          - '`Consistently write original technical blogs, with 3K monthly views`'
+      - name: Tool Usage
+        description:
+          - Proficient in using Git & `promoted GitFlow within the team`
